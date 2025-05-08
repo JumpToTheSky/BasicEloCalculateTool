@@ -1,1 +1,4 @@
 # BasicEloCalculateTool
+1. Tạo danh sách người chơi với các thuộc tính (id, tên, điểm rank, điểm elo, tỉ lệ thắng).
+2. Tạo trận đấu (mỗi trận sẽ bao gồm 2 team/ 3 người mỗi team, trận đấu lưu trữ thông tin người chơi với thuộc tính team 'blue', 'red',).
+   Chọn ngẫu nhiên người chơi với mức elo chênh lệch không quá 100 điểm theo điều kiện nhất định, mỗi trận đấu random 1 kết quả (số lượng giết/chết/hỗ trợ của một người chơi, lượng vàng kiếm được (random với tỉ lệ thuận với k/d/a người chơi), sát thương gây ra của người chơi), từ các chỉ số của kết quả, tính toán điểm rank và elo theo công thức cộng thêm. [(giết + hỗ trợ)/chết + (10-winrate) + chữ số đầu tiên của lượng sát thương của người chơi trong trận đấu] nếu thắng, và trừ đi [điểm của người chơi cao nhất bên thắng - {(giết + hỗ trợ)/chết + (10-winrate) + chữ số đầu tiên của lượng sát thương của người chơi trong trận đấu] của người chơi thuộc bên thua}], lưu trữ nhưng thông tin trên vào file json.
