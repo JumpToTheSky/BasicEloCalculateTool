@@ -5,31 +5,43 @@ class Player {
         this.id = id; 
         this.name = name; 
         this.winRate = winRate; 
-        this.elo = elo; 
-        this.rankPoint = rankPoint; 
+        this.elo = Math.floor(elo); // Ensure elo is an integer
+        this.rankPoint = Math.floor(rankPoint); // Ensure rankPoint is an integer
     }
 }
 
-
-function generateRandomName() {
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    return Array.from({ length: 5 }, () => letters.charAt(Math.floor(Math.random() * letters.length))).join('');
+function generateRandomString(length) {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    return Array.from({ length }, () => characters.charAt(Math.floor(Math.random() * characters.length))).join('');
 }
 
-function generateRandomID() {
-    return Array.from({ length: 5 }, () => Math.floor(Math.random() * 10)).join('');
+function generateRandomPlayers(count) {
+    const players = [];
+    for (let i = 0; i < count; i++) {
+        const id = Math.floor(10000 + Math.random() * 90000); // Random 5-digit ID
+        const name = generateRandomString(5); // Random 5-character name
+        players.push(new Player(id, name, 0)); // Default winRate = 0, elo = 0, rankPoint = 0
+    }
+    return players;
 }
 
-const randomPlayers = Array.from({ length: 100 }, () => {
-    return new Player(generateRandomID(), generateRandomName(), 0);
-});
+const playerFilePath = 'players.json';
 
-// Lưu danh sách người chơi vào file JSON nếu file chưa tồn tại
-const filePath = 'players.json';
-if (!fs.existsSync(filePath)) {
-    fs.writeFileSync(filePath, JSON.stringify(randomPlayers, null, 2), 'utf-8');
-} else {
-    console.log(`${filePath} already exists. Skipping file creation.`);
+function loadPlayers() {
+    if (fs.existsSync(playerFilePath)) {
+        const data = fs.readFileSync(playerFilePath, 'utf-8');
+        return JSON.parse(data).map(p => new Player(p.id, p.name, p.winRate, p.elo, p.rankPoint));
+    } else {
+        const players = generateRandomPlayers(100);
+        savePlayers(players);
+        return players;
+    }
 }
 
-module.exports = { Player, randomPlayers };
+function savePlayers(players) {
+    fs.writeFileSync(playerFilePath, JSON.stringify(players, null, 2), 'utf-8');
+}
+
+const randomPlayers = loadPlayers();
+
+module.exports = { Player, randomPlayers, savePlayers };

@@ -1,44 +1,47 @@
-const http = require('http');
+const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const { createRandomMatch, saveMatchToFile, loadMatches, filterMatchesByPlayer } = require('./Match');
+const { randomPlayers } = require('./Player');
 
-const server = http.createServer((req, res) => {
-    const filePath = path.join(__dirname, req.url === '/' ? 'players.html' : req.url);
-    const extname = path.extname(filePath);
-    let contentType = 'text/html';
+const app = express();
+const PORT = 3000;
 
-    switch (extname) {
-        case '.json':
-            contentType = 'application/json';
-            break;
-        case '.html':
-            contentType = 'text/html';
-            break;
-        case '.css':
-            contentType = 'text/css';
-            break;
-        case '.js':
-            contentType = 'application/javascript';
-            break;
-    }
+app.use(express.json());
 
-    fs.readFile(filePath, (err, content) => {
-        if (err) {
-            if (err.code === 'ENOENT') {
-                res.writeHead(404, { 'Content-Type': 'text/html' });
-                res.end('<h1>404 Not Found</h1>', 'utf-8');
-            } else {
-                res.writeHead(500);
-                res.end(`Server Error: ${err.code}`, 'utf-8');
-            }
-        } else {
-            res.writeHead(200, { 'Content-Type': contentType });
-            res.end(content, 'utf-8');
-        }
-    });
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'players.html'));
 });
 
-const PORT = 3000;
-server.listen(PORT, () => {
+app.get('/players.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'players.html'));
+});
+
+app.get('/match.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'match.html'));
+});
+
+app.post('/create-random-match', (req, res) => {
+    const match = createRandomMatch();
+    saveMatchToFile(match);
+    res.json(match.result);
+});
+
+app.get('/players', (req, res) => {
+    res.json(randomPlayers);
+});
+
+app.get('/matches', (req, res) => {
+    const matches = loadMatches();
+    res.json(matches);
+});
+
+app.get('/player-matches/:playerId', (req, res) => {
+    const playerId = parseInt(req.params.playerId, 10);
+    const matches = filterMatchesByPlayer(playerId);
+    res.json(matches);
+});
+
+app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
