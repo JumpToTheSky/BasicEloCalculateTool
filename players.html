@@ -5,45 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player List</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 10px;
             text-align: left;
         }
         th {
-            background-color: #f4f4f4;
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #toggleButton {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #toggleButton:hover {
+            background-color: #0056b3;
+        }
+        #errorMessage {
+            color: red;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Player List</h1>
-    <p id="errorMessage" style="color: red; display: none;">Failed to load player data.</p>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Win Rate</th>
-                <th>Elo</th>
-                <th>Rank Point</th>
-            </tr>
-        </thead>
-        <tbody id="playerTableBody">
-            <!-- Player rows will be inserted here -->
-        </tbody>
-    </table>
+    <header>
+        <h1>Player List</h1>
+    </header>
+    <main>
+        <button id="toggleButton" onclick="toggleView()">Go to Match Creation</button>
+        <button onclick="goToHome()">Go to Homepage</button>
+        <p id="errorMessage" style="display: none;">Failed to load player data.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Win Rate</th>
+                    <th>Elo</th>
+                    <th>Rank Point</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="playerTableBody">
+                <!-- Player rows will be inserted here -->
+            </tbody>
+        </table>
+    </main>
     <script>
-        fetch('players.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
+        function toggleView() {
+            window.location.href = 'match.html';
+        }
+
+        function goToHome() {
+            window.location.href = 'players.html';
+        }
+
+        function viewPlayerMatches(playerId) {
+            fetch(`/player-matches/${playerId}`)
+                .then(response => response.json())
+                .then(matches => {
+                    const matchList = matches.map(match => `
+                        <li>Winner: ${match.result.winner}, Teams: Blue(${match.teamBlue.length}) vs Red(${match.teamRed.length})</li>
+                    `).join('');
+                    alert(`Match History for Player ${playerId}:\n${matchList}`);
+                })
+                .catch(error => {
+                    console.error('Error loading match history:', error);
+                    alert('Failed to load match history.');
+                });
+        }
+
+        fetch('/players')
+            .then(response => response.json())
             .then(players => {
                 const tableBody = document.getElementById('playerTableBody');
                 if (players.length === 0) {
@@ -59,6 +122,7 @@
                         <td>${player.winRate}</td>
                         <td>${player.elo}</td>
                         <td>${player.rankPoint}</td>
+                        <td><button onclick="viewPlayerMatches(${player.id})">View Matches</button></td>
                     `;
                     tableBody.appendChild(row);
                 });

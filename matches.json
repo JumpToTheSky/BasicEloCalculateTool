@@ -1,0 +1,810 @@
+[
+  {
+    "teamBlue": [
+      {
+        "id": 65220,
+        "name": "XGCoe",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 17,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 23097,
+        "name": "oupRd",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 18.6,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 53330,
+        "name": "ZFDkb",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 17.2,
+        "matchesPlayed": 1
+      }
+    ],
+    "teamRed": [
+      {
+        "id": 46451,
+        "name": "jPmix",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": 3.3999999999999986,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 91713,
+        "name": "xdjJO",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": 0.7333333333333343,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 59072,
+        "name": "vZhVq",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": -0.17142857142857082,
+        "matchesPlayed": 1
+      }
+    ],
+    "result": {
+      "winner": "blue",
+      "stats": {
+        "23097": {
+          "kills": 2,
+          "deaths": 5,
+          "assists": 6,
+          "gold": 1600,
+          "damage": 8031
+        },
+        "46451": {
+          "kills": 4,
+          "deaths": 1,
+          "assists": 9,
+          "gold": 13000,
+          "damage": 627
+        },
+        "53330": {
+          "kills": 3,
+          "deaths": 5,
+          "assists": 8,
+          "gold": 2200,
+          "damage": 6538
+        },
+        "59072": {
+          "kills": 3,
+          "deaths": 7,
+          "assists": 7,
+          "gold": 1428,
+          "damage": 8764
+        },
+        "65220": {
+          "kills": 4,
+          "deaths": 9,
+          "assists": 5,
+          "gold": 1000,
+          "damage": 7262
+        },
+        "91713": {
+          "kills": 8,
+          "deaths": 6,
+          "assists": 0,
+          "gold": 1333,
+          "damage": 9941
+        }
+      }
+    }
+  },
+  {
+    "teamBlue": [
+      {
+        "id": 28718,
+        "name": "dkeUa",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": -7.285714285714288,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 77948,
+        "name": "csbCt",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": -3.4285714285714306,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 65195,
+        "name": "XwygY",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": 0.9047619047619051,
+        "matchesPlayed": 1
+      }
+    ],
+    "teamRed": [
+      {
+        "id": 88710,
+        "name": "xUidc",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 17.25,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 51668,
+        "name": "HlGHp",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 10.125,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 54912,
+        "name": "bBHcW",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 18.42857142857143,
+        "matchesPlayed": 1
+      }
+    ],
+    "result": {
+      "winner": "red",
+      "stats": {
+        "28718": {
+          "kills": 6,
+          "deaths": 7,
+          "assists": 2,
+          "gold": 1142,
+          "damage": 1848
+        },
+        "51668": {
+          "kills": 1,
+          "deaths": 8,
+          "assists": 0,
+          "gold": 125,
+          "damage": 1055
+        },
+        "54912": {
+          "kills": 2,
+          "deaths": 7,
+          "assists": 8,
+          "gold": 1428,
+          "damage": 8682
+        },
+        "65195": {
+          "kills": 4,
+          "deaths": 3,
+          "assists": 3,
+          "gold": 2333,
+          "damage": 8832
+        },
+        "77948": {
+          "kills": 9,
+          "deaths": 3,
+          "assists": 3,
+          "gold": 4000,
+          "damage": 2039
+        },
+        "88710": {
+          "kills": 2,
+          "deaths": 8,
+          "assists": 8,
+          "gold": 1250,
+          "damage": 7053
+        }
+      }
+    }
+  },
+  {
+    "teamBlue": [
+      {
+        "id": 18923,
+        "name": "EgTSj",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": 7,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 50332,
+        "name": "lUgEQ",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": -1.625,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 63816,
+        "name": "AMJPn",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": 3.8571428571428577,
+        "matchesPlayed": 1
+      }
+    ],
+    "teamRed": [
+      {
+        "id": 91087,
+        "name": "WlwVD",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 11.833333333333334,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 62391,
+        "name": "ndVDN",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 13,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 42804,
+        "name": "QJKgF",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 13,
+        "matchesPlayed": 1
+      }
+    ],
+    "result": {
+      "winner": "red",
+      "stats": {
+        "18923": {
+          "kills": 8,
+          "deaths": 4,
+          "assists": 4,
+          "gold": 3000,
+          "damage": 8374
+        },
+        "42804": {
+          "kills": 9,
+          "deaths": 6,
+          "assists": 3,
+          "gold": 2000,
+          "damage": 2553
+        },
+        "50332": {
+          "kills": 4,
+          "deaths": 8,
+          "assists": 7,
+          "gold": 1375,
+          "damage": 1291
+        },
+        "62391": {
+          "kills": 2,
+          "deaths": 5,
+          "assists": 3,
+          "gold": 1000,
+          "damage": 3423
+        },
+        "63816": {
+          "kills": 1,
+          "deaths": 7,
+          "assists": 5,
+          "gold": 857,
+          "damage": 7410
+        },
+        "91087": {
+          "kills": 2,
+          "deaths": 6,
+          "assists": 9,
+          "gold": 1833,
+          "damage": 1631
+        }
+      }
+    }
+  },
+  {
+    "teamBlue": [
+      {
+        "id": 91491,
+        "name": "nHtoz",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 25881,
+        "name": "NmPWR",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 47832,
+        "name": "qaOIf",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      }
+    ],
+    "teamRed": [
+      {
+        "id": 13098,
+        "name": "JDILJ",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 15.5,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 91087,
+        "name": "WlwVD",
+        "winRate": "NaN",
+        "elo": 20,
+        "rankPoint": null,
+        "matchesPlayed": 2
+      },
+      {
+        "id": 84845,
+        "name": "uScEP",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 13.4,
+        "matchesPlayed": 1
+      }
+    ],
+    "result": {
+      "winner": "red",
+      "stats": {
+        "13098": {
+          "kills": 9,
+          "deaths": 4,
+          "assists": 5,
+          "gold": 3500,
+          "damage": 3496
+        },
+        "25881": {
+          "kills": 8,
+          "deaths": 9,
+          "assists": 0,
+          "gold": 888,
+          "damage": 7650
+        },
+        "47832": {
+          "kills": 9,
+          "deaths": 7,
+          "assists": 9,
+          "gold": 2571,
+          "damage": 3058
+        },
+        "84845": {
+          "kills": 5,
+          "deaths": 5,
+          "assists": 7,
+          "gold": 2400,
+          "damage": 2215
+        },
+        "91087": {
+          "kills": 5,
+          "deaths": 2,
+          "assists": 9,
+          "gold": 7000,
+          "damage": 4969
+        },
+        "91491": {
+          "kills": 0,
+          "deaths": 1,
+          "assists": 2,
+          "gold": 2000,
+          "damage": 4960
+        }
+      }
+    }
+  },
+  {
+    "teamBlue": [
+      {
+        "id": 52243,
+        "name": "TyGPO",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 80681,
+        "name": "TvDRX",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 91713,
+        "name": "xdjJO",
+        "winRate": "NaN",
+        "elo": -20,
+        "rankPoint": null,
+        "matchesPlayed": 2
+      }
+    ],
+    "teamRed": [
+      {
+        "id": 51539,
+        "name": "tUeBM",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 18,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 86269,
+        "name": "NTarA",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 9.875,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 51668,
+        "name": "HlGHp",
+        "winRate": "NaN",
+        "elo": 20,
+        "rankPoint": null,
+        "matchesPlayed": 2
+      }
+    ],
+    "result": {
+      "winner": "red",
+      "stats": {
+        "51539": {
+          "kills": 0,
+          "deaths": 8,
+          "assists": 0,
+          "gold": 0,
+          "damage": 9964
+        },
+        "51668": {
+          "kills": 2,
+          "deaths": 6,
+          "assists": 7,
+          "gold": 1500,
+          "damage": 7972
+        },
+        "52243": {
+          "kills": 3,
+          "deaths": 6,
+          "assists": 6,
+          "gold": 1500,
+          "damage": 5752
+        },
+        "80681": {
+          "kills": 2,
+          "deaths": 7,
+          "assists": 0,
+          "gold": 285,
+          "damage": 30
+        },
+        "86269": {
+          "kills": 3,
+          "deaths": 8,
+          "assists": 4,
+          "gold": 875,
+          "damage": 745
+        },
+        "91713": {
+          "kills": 9,
+          "deaths": 8,
+          "assists": 2,
+          "gold": 1375,
+          "damage": 7094
+        }
+      }
+    }
+  },
+  {
+    "teamBlue": [
+      {
+        "id": 63816,
+        "name": "AMJPn",
+        "winRate": "NaN",
+        "elo": 0,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 24355,
+        "name": "UVoMb",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 15.6,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 23097,
+        "name": "oupRd",
+        "winRate": "NaN",
+        "elo": 20,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      }
+    ],
+    "teamRed": [
+      {
+        "id": 28051,
+        "name": "VyEFp",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 87620,
+        "name": "HGgfo",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 83055,
+        "name": "oeoJh",
+        "winRate": "NaN",
+        "elo": -10,
+        "rankPoint": null,
+        "matchesPlayed": 1
+      }
+    ],
+    "result": {
+      "winner": "blue",
+      "stats": {
+        "23097": {
+          "kills": 8,
+          "deaths": 1,
+          "assists": 6,
+          "gold": 14000,
+          "damage": 1184
+        },
+        "24355": {
+          "kills": 9,
+          "deaths": 5,
+          "assists": 4,
+          "gold": 2600,
+          "damage": 4313
+        },
+        "28051": {
+          "kills": 7,
+          "deaths": 7,
+          "assists": 3,
+          "gold": 1428,
+          "damage": 967
+        },
+        "63816": {
+          "kills": 7,
+          "deaths": 2,
+          "assists": 5,
+          "gold": 6000,
+          "damage": 4268
+        },
+        "83055": {
+          "kills": 2,
+          "deaths": 8,
+          "assists": 5,
+          "gold": 875,
+          "damage": 7797
+        },
+        "87620": {
+          "kills": 1,
+          "deaths": 3,
+          "assists": 4,
+          "gold": 1666,
+          "damage": 7296
+        }
+      }
+    }
+  },
+  {
+    "teamBlue": [
+      {
+        "id": 61848,
+        "name": "dGcja",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 13.777777777777779,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 99529,
+        "name": "mVFZP",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 13.5,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 51312,
+        "name": "pifNx",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 20.5,
+        "matchesPlayed": 1
+      }
+    ],
+    "teamRed": [
+      {
+        "id": 98682,
+        "name": "wpzFD",
+        "winRate": "NaN",
+        "elo": 0,
+        "rankPoint": 0,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 80973,
+        "name": "WCBah",
+        "winRate": "NaN",
+        "elo": 0,
+        "rankPoint": 0,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 68625,
+        "name": "DsAzE",
+        "winRate": "NaN",
+        "elo": 0,
+        "rankPoint": 0,
+        "matchesPlayed": 1
+      }
+    ],
+    "result": {
+      "winner": "blue",
+      "stats": {
+        "51312": {
+          "kills": 6,
+          "deaths": 2,
+          "assists": 5,
+          "gold": 5500,
+          "damage": 6105
+        },
+        "61848": {
+          "kills": 7,
+          "deaths": 9,
+          "assists": 0,
+          "gold": 777,
+          "damage": 4883
+        },
+        "68625": {
+          "kills": 1,
+          "deaths": 9,
+          "assists": 2,
+          "gold": 333,
+          "damage": 4065
+        },
+        "80973": {
+          "kills": 1,
+          "deaths": 8,
+          "assists": 9,
+          "gold": 1250,
+          "damage": 6407
+        },
+        "98682": {
+          "kills": 9,
+          "deaths": 7,
+          "assists": 9,
+          "gold": 2571,
+          "damage": 2367
+        },
+        "99529": {
+          "kills": 3,
+          "deaths": 6,
+          "assists": 0,
+          "gold": 500,
+          "damage": 4061
+        }
+      }
+    }
+  },
+  {
+    "teamBlue": [
+      {
+        "id": 49239,
+        "name": "RHlsk",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 15,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 17348,
+        "name": "jlqqH",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 18.4,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 69683,
+        "name": "pUlQP",
+        "winRate": "NaN",
+        "elo": 10,
+        "rankPoint": 15.6,
+        "matchesPlayed": 1
+      }
+    ],
+    "teamRed": [
+      {
+        "id": 78853,
+        "name": "abzfl",
+        "winRate": "NaN",
+        "elo": 0,
+        "rankPoint": 0,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 56965,
+        "name": "cTUsh",
+        "winRate": "NaN",
+        "elo": 0,
+        "rankPoint": 3.6000000000000014,
+        "matchesPlayed": 1
+      },
+      {
+        "id": 67647,
+        "name": "sAMua",
+        "winRate": "NaN",
+        "elo": 0,
+        "rankPoint": 0,
+        "matchesPlayed": 1
+      }
+    ],
+    "result": {
+      "winner": "blue",
+      "stats": {
+        "17348": {
+          "kills": 3,
+          "deaths": 5,
+          "assists": 4,
+          "gold": 1400,
+          "damage": 7496
+        },
+        "49239": {
+          "kills": 1,
+          "deaths": 5,
+          "assists": 9,
+          "gold": 2000,
+          "damage": 3658
+        },
+        "56965": {
+          "kills": 7,
+          "deaths": 1,
+          "assists": 0,
+          "gold": 7000,
+          "damage": 5811
+        },
+        "67647": {
+          "kills": 0,
+          "deaths": 8,
+          "assists": 0,
+          "gold": 0,
+          "damage": 8984
+        },
+        "69683": {
+          "kills": 4,
+          "deaths": 5,
+          "assists": 4,
+          "gold": 1600,
+          "damage": 4093
+        },
+        "78853": {
+          "kills": 2,
+          "deaths": 4,
+          "assists": 5,
+          "gold": 1750,
+          "damage": 6486
+        }
+      }
+    }
+  }
+]
