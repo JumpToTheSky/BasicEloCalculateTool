@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player List</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Player List</h1>
+    <p id="errorMessage" style="color: red; display: none;">Failed to load player data.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Win Rate</th>
+                <th>Elo</th>
+                <th>Rank Point</th>
+            </tr>
+        </thead>
+        <tbody id="playerTableBody">
+            <!-- Player rows will be inserted here -->
+        </tbody>
+    </table>
+    <script>
+        fetch('players.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(players => {
+                const tableBody = document.getElementById('playerTableBody');
+                if (players.length === 0) {
+                    document.getElementById('errorMessage').textContent = 'No players found.';
+                    document.getElementById('errorMessage').style.display = 'block';
+                    return;
+                }
+                players.forEach(player => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${player.id}</td>
+                        <td>${player.name}</td>
+                        <td>${player.winRate}</td>
+                        <td>${player.elo}</td>
+                        <td>${player.rankPoint}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading player data:', error);
+                const errorMessage = document.getElementById('errorMessage');
+                errorMessage.textContent = 'Failed to load player data.';
+                errorMessage.style.display = 'block';
+            });
+    </script>
+</body>
+</html>
