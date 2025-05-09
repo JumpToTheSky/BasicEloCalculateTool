@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Match</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container my-4">
+    <h1 class="text-center mb-4">Create Random Match</h1>
+    <div class="text-center mb-3">
+        <button class="btn btn-primary" onclick="createRandomMatch()">Generate Match</button>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mb-4">
+        <input type="number" id="matchCount" class="form-control me-2" placeholder="Enter number of matches (max 100)" min="1" max="100" style="max-width: 300px;">
+        <button class="btn btn-secondary" onclick="createMultipleRandomMatches()">Generate Multiple Matches</button>
+    </div>
+    <div class="text-center mb-3">
+        <button class="btn btn-success" onclick="createMatchesUntilLimit()">Generate Matches Until Limit</button>
+    </div>
+    <div class="result" id="result"></div>
+
+    <h2 class="mt-5">Match History</h2>
+    <table class="table table-striped table-bordered mt-3">
+        <thead class="table-light">
+            <tr>
+                <th>#</th>
+                <th>Match ID</th>
+                <th>Winner</th>
+                <th>Team Blue</th>
+                <th>Team Red</th>
+                <th>Total KDA (Blue)</th>
+                <th>Total KDA (Red)</th>
+            </tr>
+        </thead>
+        <tbody id="matchHistoryTableBody">
+            <!-- Match history rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let isCreatingMatch = false; // Trạng thái để ngăn chặn nhấn nút nhiều lần
+
+        async function createRandomMatch() {
+            if (isCreatingMatch) {
+                alert('A match is already being created. Please wait.');
+                return;
+            }
+
+            isCreatingMatch = true; // Đặt trạng thái đang tạo trận đấu
+            try {
+                const response = await fetch('http://localhost:3000/create-random-match', { method: 'POST' });
+                if (!response.ok) throw new Error('Failed to create random match');
+                const match = await response.json();
+                displayResult(match);
+                fetchMatchHistory(); // Refresh match history after creating a match
+            } catch (error) {
+                console.error('Error creating random match:', error);
+                document.getElementById('result').innerText = 'Error creating random match. Check console for details.';
+            } finally {
+                isCreatingMatch = false; // Đặt lại trạng thái sau khi hoàn tất
+            }
+        }
+
+        async function createMultipleRandomMatches() {
+            const matchCountInput = document.getElementById('matchCount');
+            const matchCount = parseInt(matchCountInput.value, 10);
+
+            if (isNaN(matchCount) || matchCount < 1 || matchCount > 100) {
+                alert('Please enter a valid number between 1 and 100.');
+                return;
+            }
+
+            if (isCreatingMatch) {
+                alert('A match creation process is already running. Please wait.');
+                return;
+            }
+
+            isCreatingMatch = true;
+
+            try {
+                for (let i = 0; i < matchCount; i++) {
+                    const response = await fetch('http://localhost:3000/create-random-match', { method: 'POST' });
+                    if (!response.ok) throw new Error(`Failed to create match ${i + 1}`);
+                    await response.json(); // Process each match response
+                }
+                alert(`${matchCount} matches created successfully.`);
+                fetchMatchHistory(); // Refresh match history after creating matches
+            } catch (error) {
+                console.error('Error creating multiple random matches:', error);
+                document.getElementById('result').innerText = 'Error creating multiple random matches. Check console for details.';
+            } finally {
+                isCreatingMatch = false;
+            }
+        }
+
+        async function createMatchesUntilLimit() {
+            if (isCreatingMatch) {
+                alert('A match creation process is already running. Please wait.');
+                return;
+            }
+
+            isCreatingMatch = true;
+
+            try {
+                while (true) {
+                    const response = await fetch('http://localhost:3000/players.json');
+                    if (!response.ok) throw new Error('Failed to fetch players.json');
+                    const players = await response.json();
+
+                    const playersBelowLimit = players.filter(player => (player.matchesPlayed || 0) < 100);
+                    if (playersBelowLimit.length === 0) {
+                        alert('All players have already played 100 matches.');
+                        break;
+                    }
+
+                    const matchResponse = await fetch('http://localhost:3000/create-random-match', { method: 'POST' });
+                    if (!matchResponse.ok) throw new Error('Failed to create a match');
+                    await matchResponse.json(); // Process match response
+                }
+
+                alert('All players have reached the 100-match limit.');
+                fetchMatchHistory(); // Refresh match history
+            } catch (error) {
+                console.error('Error creating matches until limit:', error);
+                document.getElementById('result').innerText = 'Error creating matches until limit. Check console for details.';
+            } finally {
+                isCreatingMatch = false;
+            }
+        }
+
+        function displayResult(match) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <h2>Match Created</h2>
+                <p><strong>Match ID:</strong> ${match.id}</p>
+                <p><strong>Winner:</strong> ${match.winner}</p>
+                <p><strong>Team Blue:</strong> ${match.teamBlue.map(player => player.name).join(', ')}</p>
+                <p><strong>Team Red:</strong> ${match.teamRed.map(player => player.name).join(', ')}</p>
+            `;
+        }
+
+        async function fetchMatchHistory() {
+            try {
+                const response = await fetch('http://localhost:3000/matches.json');
+                if (!response.ok) throw new Error('Failed to fetch match history');
+                const matches = await response.json();
+                updateMatchHistoryTable(matches);
+            } catch (error) {
+                console.error('Error fetching match history:', error);
+            }
+        }
+
+        function updateMatchHistoryTable(matches) {
+            const tableBody = document.getElementById('matchHistoryTableBody');
+            tableBody.innerHTML = ''; // Clear existing rows
+            matches.forEach((match, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${index + 1}</td> <!-- Serial number -->
+                    <td>${match.id}</td>
+                    <td>${match.winner}</td>
+                    <td>${match.teamBlue.map(player => player.name).join(', ')}</td>
+                    <td>${match.teamRed.map(player => player.name).join(', ')}</td>
+                    <td>${calculateTotalKDA(match.teamBlueStats)}</td>
+                    <td>${calculateTotalKDA(match.teamRedStats)}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        function calculateTotalKDA(teamStats) {
+            const { kills, deaths, assists } = teamStats;
+            return `${kills}/${deaths}/${assists}`;
+        }
+
+        // Fetch match history on page load
+        fetchMatchHistory();
+    </script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 const fs = require('fs');
 
 class Player {
-    constructor(id, name, winRate, elo = 0, rankPoint = 0) {
-        this.id = id; 
-        this.name = name; 
-        this.winRate = winRate; 
+    constructor(id, name, winRate = 0.0, elo = 0, rankPoint = 0) {
+        this.id = id;
+        this.name = name;
+        this.winRate = parseFloat(Number(winRate || 0.0).toFixed(2)); // Ensure winRate is a decimal
         this.elo = Math.floor(elo); // Ensure elo is an integer
         this.rankPoint = Math.floor(rankPoint); // Ensure rankPoint is an integer
     }
@@ -30,7 +30,14 @@ const playerFilePath = 'players.json';
 function loadPlayers() {
     if (fs.existsSync(playerFilePath)) {
         const data = fs.readFileSync(playerFilePath, 'utf-8');
-        return JSON.parse(data).map(p => new Player(p.id, p.name, p.winRate, p.elo, p.rankPoint));
+        const parsedPlayers = JSON.parse(data);
+        return parsedPlayers.map(p => new Player(
+            p.id,
+            p.name,
+            p.winRate,
+            p.elo ?? 0, // Gán giá trị mặc định nếu elo là null
+            p.rankPoint ?? 0 // Gán giá trị mặc định nếu rankPoint là null
+        ));
     } else {
         const players = generateRandomPlayers(100);
         savePlayers(players);
