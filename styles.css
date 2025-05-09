@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'League';
+    src: url('./fonts/League.otf') format('opentype');
+}
+
+body {
+    font-family: 'League', sans-serif; /* Áp dụng font chữ tùy chỉnh */
+}
+
+h1, h2, h3, h4, h5, h6, p, table, button, input, select {
+    font-family: 'League', sans-serif; /* Áp dụng font chữ cho các phần tử cụ thể */
+}
