@@ -1,12 +1,13 @@
 const fs = require('fs');
 
 class Player {
-    constructor(id, name, winRate = 0.0, elo = 0, rankPoint = 0) {
+    constructor(id, name, winRate = 0.0, elo = 0, rankPoint = 0, role = null) {
         this.id = id;
         this.name = name;
         this.winRate = parseFloat(Number(winRate || 0.0).toFixed(2)); // Ensure winRate is a decimal
         this.elo = Math.floor(elo); // Ensure elo is an integer
         this.rankPoint = Math.floor(rankPoint); // Ensure rankPoint is an integer
+        this.role = role; // Add role property
     }
 }
 
@@ -36,7 +37,8 @@ function loadPlayers() {
             p.name,
             p.winRate,
             p.elo ?? 0, // Gán giá trị mặc định nếu elo là null
-            p.rankPoint ?? 0 // Gán giá trị mặc định nếu rankPoint là null
+            p.rankPoint ?? 0, // Gán giá trị mặc định nếu rankPoint là null
+            p.role ?? null // Add default value for role if null
         ));
     } else {
         const players = generateRandomPlayers(100);

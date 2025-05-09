@@ -6,7 +6,7 @@
 body {
     font-family: 'League', sans-serif; /* Apply custom font to the entire interface */
     padding-top: 70px; /* Adjust padding for fixed navbar height */
-    background-color: #5B5A56; /* Change page background color */
+    background-color: #010A13; /* Change page background color */
     color: #FFFFFF; /* Ensure text is readable on dark background */
 }
 
@@ -17,7 +17,7 @@ body {
     z-index: 1030; /* Ensure navbar stays on top */
     height: 70px; /* Increase navbar height */
     padding: 0 20px; /* Add padding to stretch content */
-    background-color: #005A82 !important; /* Change navbar background color */
+    background: linear-gradient(to right, #005A82, #0AC8B9); /* Add gradient background */
 }
 
 .navbar-brand {
@@ -43,8 +43,8 @@ body {
 }
 
 .table thead {
-    background-color: #32281E; /* Change table header background color */
-    color: #FFFFFF; /* Ensure text is readable on dark header */
+    background-color: #F0E6D2; /* Change table header background color */
+    color: #000000; /* Ensure text is readable on light header */
 }
 
 h1, h2, h3, h4, h5, h6, p, table, button, input, select, .navbar-brand, .nav-link {

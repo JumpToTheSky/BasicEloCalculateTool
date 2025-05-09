@@ -30,7 +30,7 @@
         </div>
     </nav>
 
-    <h1 class="text-center mb-4">Create Random Match</h1>
+    <h1 class="text-center mb-4" style="color: #C89B3C;">Create Random Match</h1>
     <div class="text-center mb-3">
         <button class="btn btn-primary" onclick="createRandomMatch()">Generate Match</button>
     </div>
@@ -43,23 +43,27 @@
     </div>
     <div class="result" id="result"></div>
 
-    <h2 class="mt-5">Match History</h2>
-    <table class="table table-striped table-bordered mt-3">
-        <thead class="table-light">
-            <tr>
-                <th>#</th>
-                <th>Match ID</th>
-                <th>Winner</th>
-                <th>Team Blue</th>
-                <th>Team Red</th>
-                <th>Total KDA (Blue)</th>
-                <th>Total KDA (Red)</th>
-            </tr>
-        </thead>
-        <tbody id="matchHistoryTableBody">
-            <!-- Match history rows will be dynamically inserted here -->
-        </tbody>
-    </table>
+    <div class="d-flex justify-content-center">
+        <div class="w-75">
+            <h2 class="mt-5" style="color: #C89B3C;">Match History</h2> <!-- Updated color -->
+            <table class="table table-striped table-bordered mt-3 table-warning">
+                <thead class="table-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Match ID</th>
+                        <th>Winner</th>
+                        <th>Team Blue</th>
+                        <th>Team Red</th>
+                        <th>Total KDA (Blue)</th>
+                        <th>Total KDA (Red)</th>
+                    </tr>
+                </thead>
+                <tbody id="matchHistoryTableBody">
+                    <!-- Match history rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <!-- Add Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -185,8 +189,12 @@
                     <td>${index + 1}</td> <!-- Serial number -->
                     <td>${match.id}</td>
                     <td>${match.winner}</td>
-                    <td>${match.teamBlue.map(player => player.name).join(', ')}</td>
-                    <td>${match.teamRed.map(player => player.name).join(', ')}</td>
+                    <td style="color: blue;">
+                        ${match.teamBlue.map(player => `<a href="PlayerHistory.html?playerId=${player.id}" style="text-decoration: none; color: blue;">${player.name}</a>`).join(', ')}
+                    </td> <!-- Blue team with links -->
+                    <td style="color: red;">
+                        ${match.teamRed.map(player => `<a href="PlayerHistory.html?playerId=${player.id}" style="text-decoration: none; color: red;">${player.name}</a>`).join(', ')}
+                    </td> <!-- Red team with links -->
                     <td>${calculateTotalKDA(match.teamBlueStats)}</td>
                     <td>${calculateTotalKDA(match.teamRedStats)}</td>
                 `;

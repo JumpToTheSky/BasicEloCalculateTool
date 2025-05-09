@@ -30,22 +30,27 @@
             </div>
         </div>
     </nav>
+    
     <button class="btn btn-secondary mb-3" onclick="window.history.back()">Back</button>
-    <h1>Player Match History</h1>
-    <table class="table table-striped table-bordered mt-3">
-        <thead class="table-light">
-            <tr>
-                <th>Match ID</th>
-                <th>KDA</th>
-                <th>Damage Dealt</th>
-                <th>ELO Change</th>
-                <th>Rank Point Change</th>
-            </tr>
-        </thead>
-        <tbody id="matchHistoryTableBody">
-            <!-- Match history rows will be dynamically inserted here -->
-        </tbody>
-    </table>
+    <div class="text-center mb-4"> <!-- Center the title -->
+        <h1>Player Match History</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <table class="table table-striped table-bordered w-75 mt-3 table-warning">
+            <thead class="table-light">
+                <tr>
+                    <th>Match ID</th>
+                    <th>KDA</th>
+                    <th>Damage Dealt</th>
+                    <th>ELO Change</th>
+                    <th>Rank Point Change</th>
+                </tr>
+            </thead>
+            <tbody id="matchHistoryTableBody">
+                <!-- Match history rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
 
     <!-- Add Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
