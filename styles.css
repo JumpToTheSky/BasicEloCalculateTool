@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'League';
+    src: url('./fonts/League.otf') format('opentype');
+}
+
+body {
+    font-family: 'League', sans-serif; /* Apply custom font to the entire interface */
+    padding-top: 70px; /* Adjust padding for fixed navbar height */
+    background-color: #010A13; /* Change page background color */
+    color: #FFFFFF; /* Ensure text is readable on dark background */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Ensure navbar stays on top */
+    height: 70px; /* Increase navbar height */
+    padding: 0 20px; /* Add padding to stretch content */
+    background: linear-gradient(to right, #005A82, #0AC8B9); /* Add gradient background */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Increase brand font size */
+    color: #C89B3C !important; /* Change brand text color */
+}
+
+.nav-link {
+    font-size: 1.2rem; /* Increase nav link font size */
+    color: #C89B3C !important; /* Change tab text color */
+}
+
+.nav-link.active {
+    font-weight: bold; /* Highlight the active tab */
+}
+
+.form-control {
+    font-size: 1rem; /* Adjust search bar font size */
+}
+
+.table {
+    background-color: #A09B8C; /* Change table background color */
+}
+
+.table thead {
+    background-color: #F0E6D2; /* Change table header background color */
+    color: #000000; /* Ensure text is readable on light header */
+}
+
+h1, h2, h3, h4, h5, h6, p, table, button, input, select, .navbar-brand, .nav-link {
+    font-family: 'League', sans-serif; /* Apply custom font to specific elements */
+}

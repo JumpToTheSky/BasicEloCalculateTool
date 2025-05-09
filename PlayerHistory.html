@@ -6,24 +6,53 @@
     <title>Player History</title>
     <!-- Add Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add custom styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="container my-4">
+<body class="container-fluid my-4"> <!-- Change container to container-fluid -->
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Add Navbar -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Player List</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="players.html">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="RandomMatch.html">Random Match</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
     <button class="btn btn-secondary mb-3" onclick="window.history.back()">Back</button>
-    <h1>Player Match History</h1>
-    <table class="table table-striped table-bordered mt-3">
-        <thead class="table-light">
-            <tr>
-                <th>Match ID</th>
-                <th>KDA</th>
-                <th>Damage Dealt</th>
-                <th>ELO Change</th>
-                <th>Rank Point Change</th>
-            </tr>
-        </thead>
-        <tbody id="matchHistoryTableBody">
-            <!-- Match history rows will be dynamically inserted here -->
-        </tbody>
-    </table>
+    <div class="text-center mb-4">
+        <h1 style="color: #C89B3C;">
+            Player <span id="playerName" style="background: linear-gradient(90deg, #0AC8B9, #005A82); -webkit-background-clip: text; color: transparent;"></span> Match History
+        </h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <table class="table table-striped table-bordered w-75 mt-3 table-warning">
+            <thead class="table-light">
+                <tr>
+                    <th>Match ID</th>
+                    <th>KDA</th>
+                    <th>Damage Dealt</th>
+                    <th>ELO Change</th>
+                    <th>Rank Point Change</th>
+                </tr>
+            </thead>
+            <tbody id="matchHistoryTableBody">
+                <!-- Match history rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
 
     <!-- Add Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -37,9 +66,17 @@
             }
 
             try {
-                const response = await fetch('/player_changes.json');
-                if (!response.ok) throw new Error('Failed to fetch player_changes.json');
-                const playerChanges = await response.json();
+                const response = await fetch('/players.json');
+                if (!response.ok) throw new Error('Failed to fetch players.json');
+                const players = await response.json();
+                const player = players.find(p => p.id === parseInt(playerId));
+                if (player) {
+                    document.getElementById('playerName').textContent = player.name; // Set player name in title
+                }
+
+                const responseChanges = await fetch('/player_changes.json');
+                if (!responseChanges.ok) throw new Error('Failed to fetch player_changes.json');
+                const playerChanges = await responseChanges.json();
 
                 const matchHistory = playerChanges
                     .filter(change => change.changes.some(c => c.playerId === parseInt(playerId)))

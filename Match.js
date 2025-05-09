@@ -12,6 +12,13 @@ class Match {
     }
 }
 
+function assignRandomRoles(team) {
+    const roles = ['top', 'mid', 'jungle', 'ad carry', 'support'];
+    team.forEach((player, index) => {
+        player.role = roles[index % roles.length]; // Assign roles cyclically
+    });
+}
+
 function createRandomMatch() {
     const players = [...randomPlayers]; // Use the loaded Player instances directly
 
@@ -22,7 +29,7 @@ function createRandomMatch() {
     const teamBlue = [];
     const teamRed = [];
 
-    while (teamBlue.length < 3 || teamRed.length < 3) {
+    while (teamBlue.length < 5 || teamRed.length < 5) { // Change team size to 5
         const randomIndex = Math.floor(Math.random() * players.length);
         const player = players.splice(randomIndex, 1)[0];
 
@@ -31,7 +38,7 @@ function createRandomMatch() {
             continue; // Skip invalid players
         }
 
-        const team = teamBlue.length < 3 ? teamBlue : teamRed;
+        const team = teamBlue.length < 5 ? teamBlue : teamRed; // Adjust team size to 5
         const opposingTeam = team === teamBlue ? teamRed : teamBlue;
 
         const eloDifference = opposingTeam.length
@@ -42,6 +49,9 @@ function createRandomMatch() {
             team.push(player); // Push the entire Player object
         }
     }
+
+    assignRandomRoles(teamBlue); // Assign roles to teamBlue
+    assignRandomRoles(teamRed);  // Assign roles to teamRed
 
     const result = generateRandomResult(teamBlue, teamRed);
     const matchId = generateMatchId(); // Generate unique match ID
