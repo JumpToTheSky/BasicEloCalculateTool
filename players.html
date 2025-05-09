@@ -4,135 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #007BFF;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        #toggleButton {
-            margin-bottom: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        #toggleButton:hover {
-            background-color: #0056b3;
-        }
-        #errorMessage {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Player List</h1>
-    </header>
-    <main>
-        <button id="toggleButton" onclick="toggleView()">Go to Match Creation</button>
-        <button onclick="goToHome()">Go to Homepage</button>
-        <p id="errorMessage" style="display: none;">Failed to load player data.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Win Rate</th>
-                    <th>Elo</th>
-                    <th>Rank Point</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody id="playerTableBody">
-                <!-- Player rows will be inserted here -->
-            </tbody>
-        </table>
-    </main>
+<body class="container my-4">
+    <h1 class="mb-4">Player List</h1>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <button class="btn btn-primary" onclick="window.location.href='RandomMatch.html'">Go to Random Match</button>
+        <input type="text" id="searchInput" class="form-control me-2" placeholder="Search by name..." oninput="filterPlayers()" style="max-width: 300px;">
+        <select id="sortOrder" class="form-select" onchange="fetchPlayers()" style="max-width: 200px;">
+            <option value="desc">Sort by ELO (Descending)</option>
+            <option value="asc">Sort by ELO (Ascending)</option>
+        </select>
+    </div>
+    <table class="table table-striped table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>S.No.</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Win Rate</th>
+                <th>ELO</th>
+                <th>Rank Points</th>
+            </tr>
+        </thead>
+        <tbody id="playerTableBody">
+            <!-- Player rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        function toggleView() {
-            window.location.href = 'match.html';
+        function getRankName(rankPoint) {
+            if (rankPoint < 100) return 'Iron';
+            if (rankPoint < 200) return 'Copper';
+            if (rankPoint < 300) return 'Silver';
+            if (rankPoint < 400) return 'Gold';
+            return 'Challenger';
         }
 
-        function goToHome() {
-            window.location.href = 'players.html';
+        async function fetchPlayers() {
+            try {
+                const response = await fetch('http://localhost:3000/players.json');
+                if (!response.ok) throw new Error('Failed to fetch players.json');
+                const players = await response.json();
+                const sortOrder = document.getElementById('sortOrder').value;
+                players.sort((a, b) => sortOrder === 'desc' ? b.elo - a.elo : a.elo - b.elo);
+                updateTable(players);
+            } catch (error) {
+                console.error('Error fetching players:', error);
+            }
         }
 
-        function viewPlayerMatches(playerId) {
-            fetch(`/player-matches/${playerId}`)
-                .then(response => response.json())
-                .then(matches => {
-                    const matchList = matches.map(match => `
-                        <li>Winner: ${match.result.winner}, Teams: Blue(${match.teamBlue.length}) vs Red(${match.teamRed.length})</li>
-                    `).join('');
-                    alert(`Match History for Player ${playerId}:\n${matchList}`);
-                })
-                .catch(error => {
-                    console.error('Error loading match history:', error);
-                    alert('Failed to load match history.');
-                });
-        }
+        function updateTable(players) {
+            const tableBody = document.getElementById('playerTableBody');
+            tableBody.innerHTML = ''; // Clear existing rows
 
-        fetch('/players')
-            .then(response => response.json())
-            .then(players => {
-                const tableBody = document.getElementById('playerTableBody');
-                if (players.length === 0) {
-                    document.getElementById('errorMessage').textContent = 'No players found.';
-                    document.getElementById('errorMessage').style.display = 'block';
-                    return;
-                }
-                players.forEach(player => {
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td>${player.id}</td>
-                        <td>${player.name}</td>
-                        <td>${player.winRate}</td>
-                        <td>${player.elo}</td>
-                        <td>${player.rankPoint}</td>
-                        <td><button onclick="viewPlayerMatches(${player.id})">View Matches</button></td>
-                    `;
-                    tableBody.appendChild(row);
-                });
-            })
-            .catch(error => {
-                console.error('Error loading player data:', error);
-                const errorMessage = document.getElementById('errorMessage');
-                errorMessage.textContent = 'Failed to load player data.';
-                errorMessage.style.display = 'block';
+            players.forEach((player, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${player.id}</td>
+                    <td><a href="PlayerHistory.html?playerId=${player.id}" style="text-decoration: none; color: blue;">${player.name}</a></td>
+                    <td>${(player.winRate * 100).toFixed(1)}%</td>
+                    <td>${Math.round(player.elo)}</td>
+                    <td>${getRankName(player.rankPoint)}</td>
+                `;
+                tableBody.appendChild(row);
             });
+        }
+
+        function filterPlayers() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const rows = document.querySelectorAll('#playerTableBody tr');
+            rows.forEach(row => {
+                const nameCell = row.querySelector('td:nth-child(3)');
+                if (nameCell && nameCell.textContent.toLowerCase().includes(searchInput)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        // Fetch players every 5 seconds to detect changes
+        setInterval(fetchPlayers, 5000);
+        fetchPlayers(); // Initial fetch
     </script>
 </body>
 </html>

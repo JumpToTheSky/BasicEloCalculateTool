@@ -1,708 +1,1002 @@
 [
   {
-    "id": 98121,
-    "name": "UxfQr",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 20314,
-    "name": "WImdK",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 16784,
-    "name": "KofuZ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 84015,
-    "name": "Xflye",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 16649,
-    "name": "KluHp",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 93361,
-    "name": "PtknI",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 55824,
-    "name": "vDMmj",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 49631,
-    "name": "mxazP",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 16935,
-    "name": "eOLOj",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 12970,
-    "name": "fnBAH",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 50457,
-    "name": "XrbXk",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 59513,
-    "name": "dqNZY",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 87630,
-    "name": "IKPwh",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 44677,
-    "name": "OfACb",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 10972,
-    "name": "xBqfg",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 42521,
-    "name": "xOdBJ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 93897,
-    "name": "hvfQh",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 63140,
-    "name": "myeiF",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 50944,
-    "name": "inwkP",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 35758,
-    "name": "ojlfZ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 69683,
-    "name": "pUlQP",
-    "winRate": "NaN",
-    "elo": 10,
-    "rankPoint": 15.6,
-    "matchesPlayed": 1
-  },
-  {
-    "id": 88176,
-    "name": "eeFhS",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 72969,
-    "name": "VHDiA",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 19330,
-    "name": "UYwyZ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 55041,
-    "name": "dZsOz",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 63595,
-    "name": "QsEtQ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 66323,
-    "name": "bPoFf",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 68280,
-    "name": "LTFys",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 93495,
-    "name": "GdDRj",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 49239,
-    "name": "RHlsk",
-    "winRate": "NaN",
-    "elo": 10,
-    "rankPoint": 15,
-    "matchesPlayed": 1
-  },
-  {
-    "id": 81977,
-    "name": "PycHQ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 69257,
-    "name": "UWnSl",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 50409,
-    "name": "KlpMk",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 80863,
-    "name": "IAyPy",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 78077,
-    "name": "oExwE",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 67868,
-    "name": "gqRmg",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 17518,
-    "name": "rJaSh",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 96129,
-    "name": "RQsJY",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 92198,
-    "name": "YKtZQ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 10634,
-    "name": "vHfaI",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 67017,
-    "name": "IDAki",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 36405,
-    "name": "wovFu",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 17407,
-    "name": "ZfhqC",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 32984,
-    "name": "djnvp",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 88201,
-    "name": "BuzOr",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 56965,
-    "name": "cTUsh",
-    "winRate": "NaN",
-    "elo": 0,
-    "rankPoint": 3.6000000000000014,
-    "matchesPlayed": 1
-  },
-  {
-    "id": 11861,
-    "name": "OzghB",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 67187,
-    "name": "RKlrJ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 11438,
-    "name": "OndSc",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 29408,
-    "name": "BCYnY",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 98653,
-    "name": "fVSmT",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 94352,
-    "name": "GEnHc",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 74570,
-    "name": "bYgJT",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 20666,
-    "name": "tXCDX",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 97218,
-    "name": "DxuGO",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 24529,
-    "name": "vaWyN",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 74631,
-    "name": "PExOJ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 87411,
-    "name": "xRjCp",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 75936,
-    "name": "QwSlP",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 78940,
-    "name": "lrUDp",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 43225,
-    "name": "LzLNS",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 95512,
-    "name": "hXThe",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 91874,
-    "name": "BkjxA",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 51326,
-    "name": "vGRkV",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 26712,
-    "name": "nhxsq",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 55438,
-    "name": "egUuz",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 36516,
-    "name": "YpjRj",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 89144,
-    "name": "RTWdY",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 76378,
-    "name": "aoyFa",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 32047,
-    "name": "sVDuG",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 66588,
-    "name": "YknmI",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 15730,
-    "name": "pzTbf",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 43403,
-    "name": "jrEji",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 10999,
-    "name": "ngXzN",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 54059,
-    "name": "PsjIL",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 11908,
-    "name": "IjbvN",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 17348,
-    "name": "jlqqH",
-    "winRate": "NaN",
-    "elo": 10,
-    "rankPoint": 18.4,
-    "matchesPlayed": 1
-  },
-  {
-    "id": 26864,
-    "name": "SRjct",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 74479,
-    "name": "hpGed",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 47316,
-    "name": "lnYqT",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 31577,
-    "name": "XbwcV",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 63641,
-    "name": "iHlum",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 89901,
-    "name": "jovVv",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 69520,
-    "name": "Wzapt",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 46926,
-    "name": "ZYzbi",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 20551,
-    "name": "KUhHa",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 65169,
-    "name": "FwebU",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 87296,
-    "name": "JWzDv",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 75779,
-    "name": "tzwlb",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 48126,
-    "name": "SsUBD",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 56794,
-    "name": "ktHRf",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 12072,
-    "name": "lKybV",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 32146,
-    "name": "Ycgeo",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
-  },
-  {
-    "id": 67647,
-    "name": "sAMua",
-    "winRate": "NaN",
+    "id": 44828,
+    "name": "ltptq",
+    "winRate": 0.49,
+    "elo": 16.188801169590647,
+    "rankPoint": 16.188801169590647,
+    "eloChange": 13.49,
+    "rankPointChange": 13.49,
+    "matchesPlayed": 129
+  },
+  {
+    "id": 27945,
+    "name": "uHyqe",
+    "winRate": 0.5,
+    "elo": 64.2257074862703,
+    "rankPoint": 64.2257074862703,
+    "eloChange": 33,
+    "rankPointChange": 33,
+    "matchesPlayed": 138
+  },
+  {
+    "id": 96721,
+    "name": "WLhBa",
+    "winRate": 0.48,
+    "elo": 1.443952047952049,
+    "rankPoint": 1.443952047952049,
+    "eloChange": -2.290285714285714,
+    "rankPointChange": -2.290285714285714,
+    "matchesPlayed": 131
+  },
+  {
+    "id": 92219,
+    "name": "vyoWy",
+    "winRate": 0.5,
+    "elo": 79.01222862105215,
+    "rankPoint": 79.01222862105215,
+    "eloChange": -12.428571428571429,
+    "rankPointChange": -12.428571428571429,
+    "matchesPlayed": 138
+  },
+  {
+    "id": 10555,
+    "name": "lrQiL",
+    "winRate": 0.51,
+    "elo": 187.634694377698,
+    "rankPoint": 187.634694377698,
+    "eloChange": -12.9575,
+    "rankPointChange": -12.9575,
+    "matchesPlayed": 100
+  },
+  {
+    "id": 59614,
+    "name": "DgjpK",
+    "winRate": 0.48,
+    "elo": 85.57578603749194,
+    "rankPoint": 85.57578603749194,
+    "eloChange": -6.98,
+    "rankPointChange": -6.98,
+    "matchesPlayed": 134
+  },
+  {
+    "id": 97012,
+    "name": "Rqmln",
+    "winRate": 0.49,
+    "elo": 125.82925687710983,
+    "rankPoint": 125.82925687710983,
+    "eloChange": 12.49,
+    "rankPointChange": 12.49,
+    "matchesPlayed": 135
+  },
+  {
+    "id": 75498,
+    "name": "xYlwo",
+    "winRate": 0.5,
+    "elo": 119.21919324964688,
+    "rankPoint": 119.21919324964688,
+    "eloChange": -13.277777777777779,
+    "rankPointChange": -13.277777777777779,
+    "matchesPlayed": 128
+  },
+  {
+    "id": 50721,
+    "name": "IIBZK",
+    "winRate": 0.5,
+    "elo": 11.380091966856675,
+    "rankPoint": 11.380091966856675,
+    "eloChange": -12.75,
+    "rankPointChange": -12.75,
+    "matchesPlayed": 127
+  },
+  {
+    "id": 93784,
+    "name": "YRSPa",
+    "winRate": 0.49,
+    "elo": 21.968000000000004,
+    "rankPoint": 21.968000000000004,
+    "eloChange": 4.49,
+    "rankPointChange": 4.49,
+    "matchesPlayed": 114
+  },
+  {
+    "id": 72696,
+    "name": "mzVsd",
+    "winRate": 0.5,
+    "elo": 205.10626432398345,
+    "rankPoint": 205.10626432398345,
+    "eloChange": -13.036363636363635,
+    "rankPointChange": -13.036363636363635,
+    "matchesPlayed": 101
+  },
+  {
+    "id": 64783,
+    "name": "eIOxH",
+    "winRate": 0.51,
+    "elo": 88.48893355378557,
+    "rankPoint": 88.48893355378557,
+    "eloChange": -11.51,
+    "rankPointChange": -11.51,
+    "matchesPlayed": 129
+  },
+  {
+    "id": 81294,
+    "name": "xJbnz",
+    "winRate": 0.5,
+    "elo": 115.07640878419826,
+    "rankPoint": 115.07640878419826,
+    "eloChange": -7.5,
+    "rankPointChange": -7.5,
+    "matchesPlayed": 133
+  },
+  {
+    "id": 50571,
+    "name": "ShiEB",
+    "winRate": 0.49,
+    "elo": 54.744475912975915,
+    "rankPoint": 54.744475912975915,
+    "eloChange": 14.535454545454545,
+    "rankPointChange": 14.535454545454545,
+    "matchesPlayed": 112
+  },
+  {
+    "id": 62536,
+    "name": "TWuKP",
+    "winRate": 0.51,
+    "elo": 147.10297947403393,
+    "rankPoint": 147.10297947403393,
+    "eloChange": 16.51,
+    "rankPointChange": 16.51,
+    "matchesPlayed": 142
+  },
+  {
+    "id": 62648,
+    "name": "PNafg",
+    "winRate": 0.49,
     "elo": 0,
     "rankPoint": 0,
-    "matchesPlayed": 1
+    "eloChange": -15.712222222222222,
+    "rankPointChange": -15.712222222222222,
+    "matchesPlayed": 135
   },
   {
-    "id": 89846,
-    "name": "DEVhl",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
+    "id": 14644,
+    "name": "tjSnj",
+    "winRate": 0.49,
+    "elo": 169.94674881510088,
+    "rankPoint": 169.94674881510088,
+    "eloChange": 10.09,
+    "rankPointChange": 10.09,
+    "matchesPlayed": 133
   },
   {
-    "id": 61392,
-    "name": "qVVBb",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
+    "id": 17615,
+    "name": "KZaQd",
+    "winRate": 0.5,
+    "elo": 212.69892560650982,
+    "rankPoint": 212.69892560650982,
+    "eloChange": -6.933333333333333,
+    "rankPointChange": -6.933333333333333,
+    "matchesPlayed": 141
   },
   {
-    "id": 31200,
-    "name": "rXTck",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
+    "id": 46917,
+    "name": "iJgVi",
+    "winRate": 0.49,
+    "elo": 8.898000000000001,
+    "rankPoint": 8.898000000000001,
+    "eloChange": -9.69,
+    "rankPointChange": -9.69,
+    "matchesPlayed": 124
   },
   {
-    "id": 91098,
-    "name": "wwLpa",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0
+    "id": 33208,
+    "name": "usurW",
+    "winRate": 0.51,
+    "elo": 358.92058901342057,
+    "rankPoint": 358.92058901342057,
+    "eloChange": -15.611999999999998,
+    "rankPointChange": -15.611999999999998,
+    "matchesPlayed": 142
   },
   {
-    "id": 78853,
-    "name": "abzfl",
-    "winRate": "NaN",
+    "id": 99154,
+    "name": "fcaSl",
+    "winRate": 0.51,
+    "elo": 204.76123541250047,
+    "rankPoint": 204.76123541250047,
+    "eloChange": 35.412,
+    "rankPointChange": 35.412,
+    "matchesPlayed": 140
+  },
+  {
+    "id": 53114,
+    "name": "lCLzc",
+    "winRate": 0.52,
+    "elo": 189.0627979828824,
+    "rankPoint": 189.0627979828824,
+    "eloChange": 3.9905882352941178,
+    "rankPointChange": 3.9905882352941178,
+    "matchesPlayed": 132
+  },
+  {
+    "id": 63562,
+    "name": "apXOH",
+    "winRate": 0.5,
+    "elo": 164.22187043382428,
+    "rankPoint": 164.22187043382428,
+    "eloChange": -43.8,
+    "rankPointChange": -43.8,
+    "matchesPlayed": 138
+  },
+  {
+    "id": 23793,
+    "name": "GURES",
+    "winRate": 0.5,
+    "elo": 3.5200000000000014,
+    "rankPoint": 3.5200000000000014,
+    "eloChange": -15.799999999999999,
+    "rankPointChange": -15.799999999999999,
+    "matchesPlayed": 127
+  },
+  {
+    "id": 69138,
+    "name": "vbNsH",
+    "winRate": 0.5,
+    "elo": 249.28060698600535,
+    "rankPoint": 249.28060698600535,
+    "eloChange": 14.576470588235292,
+    "rankPointChange": 14.576470588235292,
+    "matchesPlayed": 130
+  },
+  {
+    "id": 23798,
+    "name": "DoBMS",
+    "winRate": 0.5,
+    "elo": 105.2568498168498,
+    "rankPoint": 105.2568498168498,
+    "eloChange": 5.166666666666666,
+    "rankPointChange": 5.166666666666666,
+    "matchesPlayed": 133
+  },
+  {
+    "id": 60800,
+    "name": "dMlpw",
+    "winRate": 0.5,
     "elo": 0,
     "rankPoint": 0,
-    "matchesPlayed": 1
+    "eloChange": -15.5,
+    "rankPointChange": -15.5,
+    "matchesPlayed": 135
   },
   {
-    "id": 19657,
-    "name": "SUIqm",
-    "winRate": 0,
+    "id": 14952,
+    "name": "UZpWZ",
+    "winRate": 0.51,
+    "elo": 328.24674949531095,
+    "rankPoint": 328.24674949531095,
+    "eloChange": 12.011999999999999,
+    "rankPointChange": 12.011999999999999,
+    "matchesPlayed": 118
+  },
+  {
+    "id": 97125,
+    "name": "UiXXi",
+    "winRate": 0.5,
+    "elo": 128.98260713323782,
+    "rankPoint": 128.98260713323782,
+    "eloChange": 10.2,
+    "rankPointChange": 10.2,
+    "matchesPlayed": 152
+  },
+  {
+    "id": 43256,
+    "name": "lwRkk",
+    "winRate": 0.49,
+    "elo": 145.6072347277647,
+    "rankPoint": 145.6072347277647,
+    "eloChange": -3.6775,
+    "rankPointChange": -3.6775,
+    "matchesPlayed": 127
+  },
+  {
+    "id": 42432,
+    "name": "nPpKo",
+    "winRate": 0.5,
+    "elo": 23.012278094738456,
+    "rankPoint": 23.012278094738456,
+    "eloChange": 2.28,
+    "rankPointChange": 2.28,
+    "matchesPlayed": 151
+  },
+  {
+    "id": 83144,
+    "name": "UZlRM",
+    "winRate": 0.51,
+    "elo": 355.99861542551,
+    "rankPoint": 355.99861542551,
+    "eloChange": -15.011999999999999,
+    "rankPointChange": -15.011999999999999,
+    "matchesPlayed": 114
+  },
+  {
+    "id": 64967,
+    "name": "fnfAM",
+    "winRate": 0.49,
+    "elo": 120.03419020468166,
+    "rankPoint": 120.03419020468166,
+    "eloChange": -10.668000000000001,
+    "rankPointChange": -10.668000000000001,
+    "matchesPlayed": 142
+  },
+  {
+    "id": 89801,
+    "name": "KAMTd",
+    "winRate": 0.51,
+    "elo": 278.5892100027197,
+    "rankPoint": 278.5892100027197,
+    "eloChange": 11.209999999999999,
+    "rankPointChange": 11.209999999999999,
+    "matchesPlayed": 151
+  },
+  {
+    "id": 46430,
+    "name": "TmZcd",
+    "winRate": 0.49,
+    "elo": 171.38861710838177,
+    "rankPoint": 171.38861710838177,
+    "eloChange": -6.288,
+    "rankPointChange": -6.288,
+    "matchesPlayed": 126
+  },
+  {
+    "id": 17840,
+    "name": "AZCXe",
+    "winRate": 0.51,
+    "elo": 100.29602162531637,
+    "rankPoint": 100.29602162531637,
+    "eloChange": 8.139272727272727,
+    "rankPointChange": 8.139272727272727,
+    "matchesPlayed": 130
+  },
+  {
+    "id": 71430,
+    "name": "GYOTD",
+    "winRate": 0.52,
+    "elo": 244.49563364115275,
+    "rankPoint": 244.49563364115275,
+    "eloChange": 13.824,
+    "rankPointChange": 13.824,
+    "matchesPlayed": 133
+  },
+  {
+    "id": 14400,
+    "name": "EaAPG",
+    "winRate": 0.54,
+    "elo": 348.9584043169563,
+    "rankPoint": 348.9584043169563,
+    "eloChange": 6.9479999999999995,
+    "rankPointChange": 6.9479999999999995,
+    "matchesPlayed": 99
+  },
+  {
+    "id": 43958,
+    "name": "AZUIR",
+    "winRate": 0.51,
+    "elo": 367.4771597291597,
+    "rankPoint": 367.4771597291597,
+    "eloChange": 10.01,
+    "rankPointChange": 10.01,
+    "matchesPlayed": 110
+  },
+  {
+    "id": 98071,
+    "name": "EcgDq",
+    "winRate": 0.51,
+    "elo": 220.08605213744244,
+    "rankPoint": 220.08605213744244,
+    "eloChange": -13.266545454545453,
+    "rankPointChange": -13.266545454545453,
+    "matchesPlayed": 133
+  },
+  {
+    "id": 42614,
+    "name": "BOmew",
+    "winRate": 0.51,
+    "elo": 130.31911469636313,
+    "rankPoint": 130.31911469636313,
+    "eloChange": -2.51,
+    "rankPointChange": -2.51,
+    "matchesPlayed": 123
+  },
+  {
+    "id": 40247,
+    "name": "kLTMd",
+    "winRate": 0.5,
+    "elo": 176.2627637979496,
+    "rankPoint": 176.2627637979496,
+    "eloChange": -5.666666666666667,
+    "rankPointChange": -5.666666666666667,
+    "matchesPlayed": 150
+  },
+  {
+    "id": 29544,
+    "name": "IIgFA",
+    "winRate": 0.48,
+    "elo": 89.44543833943835,
+    "rankPoint": 89.44543833943835,
+    "eloChange": 2.813333333333333,
+    "rankPointChange": 2.813333333333333,
+    "matchesPlayed": 113
+  },
+  {
+    "id": 98943,
+    "name": "JmRTH",
+    "winRate": 0.49,
+    "elo": 140.98124446703397,
+    "rankPoint": 140.98124446703397,
+    "eloChange": -7.704285714285715,
+    "rankPointChange": -7.704285714285715,
+    "matchesPlayed": 127
+  },
+  {
+    "id": 93438,
+    "name": "clEuZ",
+    "winRate": 0.48,
+    "elo": 13.859592885375495,
+    "rankPoint": 13.859592885375495,
+    "eloChange": -14.975999999999999,
+    "rankPointChange": -14.975999999999999,
+    "matchesPlayed": 121
+  },
+  {
+    "id": 63268,
+    "name": "rTbRx",
+    "winRate": 0.62,
+    "elo": 254.46305542844263,
+    "rankPoint": 254.46305542844263,
+    "eloChange": 18.252,
+    "rankPointChange": 18.252,
+    "matchesPlayed": 72
+  },
+  {
+    "id": 10607,
+    "name": "dBkMu",
+    "winRate": 0.51,
+    "elo": 157.20895055703303,
+    "rankPoint": 157.20895055703303,
+    "eloChange": -15.01,
+    "rankPointChange": -15.01,
+    "matchesPlayed": 133
+  },
+  {
+    "id": 76105,
+    "name": "shaML",
+    "winRate": 0.47,
     "elo": 0,
-    "rankPoint": 0
+    "rankPoint": 0,
+    "eloChange": -20.803333333333335,
+    "rankPointChange": -20.803333333333335,
+    "matchesPlayed": 119
+  },
+  {
+    "id": 10601,
+    "name": "xlwmh",
+    "winRate": 0.5,
+    "elo": 2.6903225806451614,
+    "rankPoint": 2.6903225806451614,
+    "eloChange": 2.6903225806451614,
+    "rankPointChange": 2.6903225806451614,
+    "matchesPlayed": 114
+  },
+  {
+    "id": 76708,
+    "name": "mfGeg",
+    "winRate": 0.49,
+    "elo": 44.24493434125782,
+    "rankPoint": 44.24493434125782,
+    "eloChange": 16.188,
+    "rankPointChange": 16.188,
+    "matchesPlayed": 128
+  },
+  {
+    "id": 78650,
+    "name": "hSrpP",
+    "winRate": 0.51,
+    "elo": 62.294467969117,
+    "rankPoint": 62.294467969117,
+    "eloChange": -9.51,
+    "rankPointChange": -9.51,
+    "matchesPlayed": 118
+  },
+  {
+    "id": 71824,
+    "name": "LDPnK",
+    "winRate": 0.5,
+    "elo": 16.642619047619043,
+    "rankPoint": 16.642619047619043,
+    "eloChange": 6.333333333333333,
+    "rankPointChange": 6.333333333333333,
+    "matchesPlayed": 110
+  },
+  {
+    "id": 92800,
+    "name": "ysXaQ",
+    "winRate": 0.5,
+    "elo": 175.06320795325126,
+    "rankPoint": 175.06320795325126,
+    "eloChange": -21.763636363636362,
+    "rankPointChange": -21.763636363636362,
+    "matchesPlayed": 151
+  },
+  {
+    "id": 95216,
+    "name": "xgsDl",
+    "winRate": 0.51,
+    "elo": 238.20704157229076,
+    "rankPoint": 238.20704157229076,
+    "eloChange": 14.51,
+    "rankPointChange": 14.51,
+    "matchesPlayed": 135
+  },
+  {
+    "id": 56687,
+    "name": "HYeGu",
+    "winRate": 0.5,
+    "elo": 33.26442105263152,
+    "rankPoint": 33.26442105263152,
+    "eloChange": -30,
+    "rankPointChange": -30,
+    "matchesPlayed": 124
+  },
+  {
+    "id": 81952,
+    "name": "mDges",
+    "winRate": 0.5,
+    "elo": 34.86363636363636,
+    "rankPoint": 34.86363636363636,
+    "eloChange": 13.863636363636363,
+    "rankPointChange": 13.863636363636363,
+    "matchesPlayed": 122
+  },
+  {
+    "id": 61710,
+    "name": "alSeV",
+    "winRate": 0.5,
+    "elo": 97.13324902652634,
+    "rankPoint": 97.13324902652634,
+    "eloChange": -9.166666666666668,
+    "rankPointChange": -9.166666666666668,
+    "matchesPlayed": 129
+  },
+  {
+    "id": 55229,
+    "name": "pfYsY",
+    "winRate": 0.52,
+    "elo": 185.43418229837792,
+    "rankPoint": 185.43418229837792,
+    "eloChange": -10.52,
+    "rankPointChange": -10.52,
+    "matchesPlayed": 108
+  },
+  {
+    "id": 58724,
+    "name": "gGQgd",
+    "winRate": 0.51,
+    "elo": 418.54714394377555,
+    "rankPoint": 418.54714394377555,
+    "eloChange": 33.012,
+    "rankPointChange": 33.012,
+    "matchesPlayed": 106
+  },
+  {
+    "id": 86184,
+    "name": "lLOhL",
+    "winRate": 0.5,
+    "elo": 267.4068565240516,
+    "rankPoint": 267.4068565240516,
+    "eloChange": 13,
+    "rankPointChange": 13,
+    "matchesPlayed": 123
+  },
+  {
+    "id": 64744,
+    "name": "YjSpR",
+    "winRate": 0.52,
+    "elo": 172.30456452581356,
+    "rankPoint": 172.30456452581356,
+    "eloChange": 6.1739999999999995,
+    "rankPointChange": 6.1739999999999995,
+    "matchesPlayed": 145
+  },
+  {
+    "id": 82619,
+    "name": "qcYgA",
+    "winRate": 0.51,
+    "elo": 43.946,
+    "rankPoint": 43.946,
+    "eloChange": 21.812,
+    "rankPointChange": 21.812,
+    "matchesPlayed": 138
+  },
+  {
+    "id": 18844,
+    "name": "KkCue",
+    "winRate": 0.5,
+    "elo": 81.86148707020908,
+    "rankPoint": 81.86148707020908,
+    "eloChange": 10.25,
+    "rankPointChange": 10.25,
+    "matchesPlayed": 128
+  },
+  {
+    "id": 65300,
+    "name": "PPvnj",
+    "winRate": 0.49,
+    "elo": 282.3396351331722,
+    "rankPoint": 282.3396351331722,
+    "eloChange": -30.587999999999997,
+    "rankPointChange": -30.587999999999997,
+    "matchesPlayed": 134
+  },
+  {
+    "id": 55552,
+    "name": "puJxX",
+    "winRate": 0.49,
+    "elo": 23.48657142857143,
+    "rankPoint": 23.48657142857143,
+    "eloChange": 19.068,
+    "rankPointChange": 19.068,
+    "matchesPlayed": 118
+  },
+  {
+    "id": 89966,
+    "name": "MPbrr",
+    "winRate": 0.46,
+    "elo": 0,
+    "rankPoint": 0,
+    "eloChange": -6.46,
+    "rankPointChange": -6.46,
+    "matchesPlayed": 97
+  },
+  {
+    "id": 19406,
+    "name": "KuwUE",
+    "winRate": 0.49,
+    "elo": 133.7946140409075,
+    "rankPoint": 133.7946140409075,
+    "eloChange": -4.321333333333333,
+    "rankPointChange": -4.321333333333333,
+    "matchesPlayed": 111
+  },
+  {
+    "id": 65146,
+    "name": "KtiKS",
+    "winRate": 0.5,
+    "elo": 157.33545824709302,
+    "rankPoint": 157.33545824709302,
+    "eloChange": -1.9545454545454546,
+    "rankPointChange": -1.9545454545454546,
+    "matchesPlayed": 116
+  },
+  {
+    "id": 13620,
+    "name": "OEfLH",
+    "winRate": 0.51,
+    "elo": 59.604227597983524,
+    "rankPoint": 59.604227597983524,
+    "eloChange": -11.81,
+    "rankPointChange": -11.81,
+    "matchesPlayed": 136
+  },
+  {
+    "id": 77739,
+    "name": "ugshw",
+    "winRate": 0.51,
+    "elo": 267.4269526913611,
+    "rankPoint": 267.4269526913611,
+    "eloChange": -13.812,
+    "rankPointChange": -13.812,
+    "matchesPlayed": 136
+  },
+  {
+    "id": 77433,
+    "name": "KaEyA",
+    "winRate": 0.51,
+    "elo": 260.57722252222436,
+    "rankPoint": 260.57722252222436,
+    "eloChange": 18.04357894736842,
+    "rankPointChange": 18.04357894736842,
+    "matchesPlayed": 103
+  },
+  {
+    "id": 67342,
+    "name": "WArpK",
+    "winRate": 0.5,
+    "elo": 116.46676990170062,
+    "rankPoint": 116.46676990170062,
+    "eloChange": 11.5,
+    "rankPointChange": 11.5,
+    "matchesPlayed": 120
+  },
+  {
+    "id": 42501,
+    "name": "zcCCM",
+    "winRate": 0.49,
+    "elo": 104.49718403707094,
+    "rankPoint": 104.49718403707094,
+    "eloChange": 2.3081818181818186,
+    "rankPointChange": 2.3081818181818186,
+    "matchesPlayed": 107
+  },
+  {
+    "id": 95211,
+    "name": "GFOgc",
+    "winRate": 0.49,
+    "elo": 84.36221050345533,
+    "rankPoint": 84.36221050345533,
+    "eloChange": 8.115,
+    "rankPointChange": 8.115,
+    "matchesPlayed": 139
+  },
+  {
+    "id": 99108,
+    "name": "TPkle",
+    "winRate": 0.51,
+    "elo": 61.82892112519473,
+    "rankPoint": 61.82892112519473,
+    "eloChange": -3.562631578947369,
+    "rankPointChange": -3.562631578947369,
+    "matchesPlayed": 146
+  },
+  {
+    "id": 35220,
+    "name": "fcxEY",
+    "winRate": 0.49,
+    "elo": 66.72360465263661,
+    "rankPoint": 66.72360465263661,
+    "eloChange": 2.5879999999999996,
+    "rankPointChange": 2.5879999999999996,
+    "matchesPlayed": 142
+  },
+  {
+    "id": 57312,
+    "name": "Pfrcs",
+    "winRate": 0.49,
+    "elo": 71.06984372220876,
+    "rankPoint": 71.06984372220876,
+    "eloChange": -19.8,
+    "rankPointChange": -19.8,
+    "matchesPlayed": 99
+  },
+  {
+    "id": 73203,
+    "name": "kBwce",
+    "winRate": 0.52,
+    "elo": 323.1288629791261,
+    "rankPoint": 323.1288629791261,
+    "eloChange": 10.52,
+    "rankPointChange": 10.52,
+    "matchesPlayed": 114
+  },
+  {
+    "id": 92261,
+    "name": "DSUAG",
+    "winRate": 0.51,
+    "elo": 72.72412079908706,
+    "rankPoint": 72.72412079908706,
+    "eloChange": -10.51,
+    "rankPointChange": -10.51,
+    "matchesPlayed": 156
+  },
+  {
+    "id": 84696,
+    "name": "QNeIQ",
+    "winRate": 0.5,
+    "elo": 102.21008846708845,
+    "rankPoint": 102.21008846708845,
+    "eloChange": -5.091428571428572,
+    "rankPointChange": -5.091428571428572,
+    "matchesPlayed": 126
+  },
+  {
+    "id": 58670,
+    "name": "JhLJt",
+    "winRate": 0.54,
+    "elo": 371.8369413037942,
+    "rankPoint": 371.8369413037942,
+    "eloChange": -4.8,
+    "rankPointChange": -4.8,
+    "matchesPlayed": 97
+  },
+  {
+    "id": 51816,
+    "name": "SgUVQ",
+    "winRate": 0.52,
+    "elo": 30.452527642292342,
+    "rankPoint": 30.452527642292342,
+    "eloChange": -16.343999999999998,
+    "rankPointChange": -16.343999999999998,
+    "matchesPlayed": 156
+  },
+  {
+    "id": 76969,
+    "name": "pkMix",
+    "winRate": 0.5,
+    "elo": 215.8315709999432,
+    "rankPoint": 215.8315709999432,
+    "eloChange": -7.282608695652174,
+    "rankPointChange": -7.282608695652174,
+    "matchesPlayed": 125
+  },
+  {
+    "id": 28294,
+    "name": "GIYPc",
+    "winRate": 0.5,
+    "elo": 206.3874081900464,
+    "rankPoint": 206.3874081900464,
+    "eloChange": -18.599999999999998,
+    "rankPointChange": -18.599999999999998,
+    "matchesPlayed": 158
+  },
+  {
+    "id": 66788,
+    "name": "OrCuz",
+    "winRate": 0.49,
+    "elo": 208.5017708139813,
+    "rankPoint": 208.5017708139813,
+    "eloChange": 8.688,
+    "rankPointChange": 8.688,
+    "matchesPlayed": 122
+  },
+  {
+    "id": 87405,
+    "name": "vyXFW",
+    "winRate": 0.51,
+    "elo": 240.43525632537398,
+    "rankPoint": 240.43525632537398,
+    "eloChange": 19.843333333333334,
+    "rankPointChange": 19.843333333333334,
+    "matchesPlayed": 120
+  },
+  {
+    "id": 12717,
+    "name": "SqINP",
+    "winRate": 0.5,
+    "elo": 172.1747736556529,
+    "rankPoint": 172.1747736556529,
+    "eloChange": 12.6,
+    "rankPointChange": 12.6,
+    "matchesPlayed": 133
+  },
+  {
+    "id": 15098,
+    "name": "cSXtR",
+    "winRate": 0.5,
+    "elo": 69.61724073028421,
+    "rankPoint": 69.61724073028421,
+    "eloChange": 24.5,
+    "rankPointChange": 24.5,
+    "matchesPlayed": 136
+  },
+  {
+    "id": 91205,
+    "name": "UWBRI",
+    "winRate": 0.5,
+    "elo": 83.28789742267064,
+    "rankPoint": 83.28789742267064,
+    "eloChange": -3.666666666666667,
+    "rankPointChange": -3.666666666666667,
+    "matchesPlayed": 117
+  },
+  {
+    "id": 17288,
+    "name": "BfLsa",
+    "winRate": 0.49,
+    "elo": 130.4141818181818,
+    "rankPoint": 130.4141818181818,
+    "eloChange": -8.49,
+    "rankPointChange": -8.49,
+    "matchesPlayed": 135
+  },
+  {
+    "id": 43137,
+    "name": "pkAWB",
+    "winRate": 0.51,
+    "elo": 42.368280164556595,
+    "rankPoint": 42.368280164556595,
+    "eloChange": -13.01,
+    "rankPointChange": -13.01,
+    "matchesPlayed": 155
+  },
+  {
+    "id": 28152,
+    "name": "KxGIe",
+    "winRate": 0.48,
+    "elo": 105.11013814034024,
+    "rankPoint": 105.11013814034024,
+    "eloChange": 15.48,
+    "rankPointChange": 15.48,
+    "matchesPlayed": 115
+  },
+  {
+    "id": 51999,
+    "name": "NBHyJ",
+    "winRate": 0.5,
+    "elo": 325.0948210728392,
+    "rankPoint": 325.0948210728392,
+    "eloChange": 36.5,
+    "rankPointChange": 36.5,
+    "matchesPlayed": 104
+  },
+  {
+    "id": 36304,
+    "name": "FQtYU",
+    "winRate": 0.59,
+    "elo": 292.48984716607777,
+    "rankPoint": 292.48984716607777,
+    "eloChange": -20.880000000000003,
+    "rankPointChange": -20.880000000000003,
+    "matchesPlayed": 81
+  },
+  {
+    "id": 12718,
+    "name": "CGPhW",
+    "winRate": 0.5,
+    "elo": 0,
+    "rankPoint": 0,
+    "eloChange": -7.5,
+    "rankPointChange": -7.5,
+    "matchesPlayed": 112
+  },
+  {
+    "id": 20740,
+    "name": "VQoBI",
+    "winRate": 0.5,
+    "elo": 57.73351648351648,
+    "rankPoint": 57.73351648351648,
+    "eloChange": -16,
+    "rankPointChange": -16,
+    "matchesPlayed": 154
+  },
+  {
+    "id": 18040,
+    "name": "EonhG",
+    "winRate": 0.49,
+    "elo": 37.565373658505244,
+    "rankPoint": 37.565373658505244,
+    "eloChange": -29.387999999999998,
+    "rankPointChange": -29.387999999999998,
+    "matchesPlayed": 130
+  },
+  {
+    "id": 33823,
+    "name": "MFolh",
+    "winRate": 0.51,
+    "elo": 103.6962158367948,
+    "rankPoint": 103.6962158367948,
+    "eloChange": 34.51,
+    "rankPointChange": 34.51,
+    "matchesPlayed": 132
+  },
+  {
+    "id": 31483,
+    "name": "kMwJz",
+    "winRate": 0.49,
+    "elo": 59.40340509678116,
+    "rankPoint": 59.40340509678116,
+    "eloChange": 7.0284615384615385,
+    "rankPointChange": 7.0284615384615385,
+    "matchesPlayed": 130
+  },
+  {
+    "id": 53346,
+    "name": "HDdUZ",
+    "winRate": 0.51,
+    "elo": 253.66073816983223,
+    "rankPoint": 253.66073816983223,
+    "eloChange": 63.01199999999999,
+    "rankPointChange": 63.01199999999999,
+    "matchesPlayed": 130
   }
 ]
