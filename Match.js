@@ -1,11 +1,9 @@
 const fs = require('fs');
 const { randomPlayers, savePlayers } = require('./Player');
-const express = require('express');
-const app = express();
+const path = require('path');
 
-// Đọc danh sách tướng từ champions.json
 function loadChampions() {
-    const championsFilePath = 'champions.json';
+    const championsFilePath = path.join(__dirname, 'champions.json');
     if (fs.existsSync(championsFilePath)) {
         const data = fs.readFileSync(championsFilePath, 'utf-8');
         try {
@@ -19,20 +17,78 @@ function loadChampions() {
     }
     return [];
 }
+
 const championsList = loadChampions();
+
+const matchFilePath = path.join(__dirname, 'matches.json');
+const playerChangesFilePath = path.join(__dirname, 'player_changes.json');
+
+function saveMatchToFile(match) {
+    let matches = [];
+    if (fs.existsSync(matchFilePath)) {
+        const fileContent = fs.readFileSync(matchFilePath, 'utf-8');
+        try {
+            matches = JSON.parse(fileContent);
+            if (!Array.isArray(matches)) {
+                console.error('Invalid matches.json format. Resetting to an empty array.');
+                matches = [];
+            }
+        } catch (error) {
+            console.error('Error parsing matches.json. Resetting to an empty array.', error);
+            matches = [];
+        }
+    } else {
+        fs.writeFileSync(matchFilePath, JSON.stringify([], null, 2), 'utf-8');
+    }
+    matches.push(match);
+    fs.writeFileSync(matchFilePath, JSON.stringify(matches, null, 2), 'utf-8');
+}
+
+function loadMatches() {
+    if (!fs.existsSync(matchFilePath)) {
+        fs.writeFileSync(matchFilePath, JSON.stringify([], null, 2), 'utf-8');
+        return [];
+    }
+    return JSON.parse(fs.readFileSync(matchFilePath, 'utf-8'));
+}
+
+function savePlayerChanges(matchId, teamBlue, teamRed, stats) {
+    const changesFilePath = playerChangesFilePath;
+    if (!fs.existsSync(changesFilePath)) {
+        fs.writeFileSync(changesFilePath, JSON.stringify([], null, 2), 'utf-8');
+    }
+    const changes = fs.existsSync(changesFilePath) ? JSON.parse(fs.readFileSync(changesFilePath, 'utf-8')) : [];
+    const matchChanges = {
+        matchId,
+        changes: [...teamBlue, ...teamRed].map(player => ({
+            playerId: player.id,
+            champion: player.champion || "Unknown",
+            role: player.role || "Unknown",
+            eloChange: player.eloChange ?? 0,
+            rankPointChange: player.rankPointChange ?? 0,
+            stats: {
+                kills: stats[player.id]?.kills || 0,
+                deaths: stats[player.id]?.deaths || 0,
+                assists: stats[player.id]?.assists || 0,
+                damage: stats[player.id]?.damage || 0
+            }
+        }))
+    };
+    changes.push(matchChanges);
+    fs.writeFileSync(changesFilePath, JSON.stringify(changes, null, 2), 'utf-8');
+}
 
 class Match {
     constructor(id, teamBlue, teamRed, result) {
-        this.id = id; // Unique match ID
+        this.id = id;
         this.teamBlue = teamBlue;
         this.teamRed = teamRed;
-        this.result = result; // { winner: 'blue' or 'red', stats: { playerId: { kills, deaths, assists, gold, damage } } }
+        this.result = result;
     }
 }
 
 function assignRandomRoles(team) {
     const roles = ['top', 'mid', 'jungle', 'ad carry', 'support'];
-    // Shuffle roles for each team so each player gets a unique random role
     const shuffledRoles = roles
         .map(role => ({ role, sort: Math.random() }))
         .sort((a, b) => a.sort - b.sort)
@@ -42,7 +98,6 @@ function assignRandomRoles(team) {
     });
 }
 
-// Gán tướng ngẫu nhiên cho mỗi người chơi
 function assignRandomChampions(team) {
     team.forEach(player => {
         if (championsList.length > 0) {
@@ -55,7 +110,7 @@ function assignRandomChampions(team) {
 }
 
 function createRandomMatch() {
-    const players = [...randomPlayers]; // Use the loaded Player instances directly
+    const players = [...randomPlayers];
 
     if (players.length === 0) {
         throw new Error('No valid players available to create a match.');
@@ -64,16 +119,16 @@ function createRandomMatch() {
     const teamBlue = [];
     const teamRed = [];
 
-    while (teamBlue.length < 5 || teamRed.length < 5) { // Change team size to 5
+    while (teamBlue.length < 5 || teamRed.length < 5) {
         const randomIndex = Math.floor(Math.random() * players.length);
         const player = players.splice(randomIndex, 1)[0];
 
         if (!player || typeof player.elo !== 'number') {
             console.error('Invalid player object:', player);
-            continue; // Skip invalid players
+            continue;
         }
 
-        const team = teamBlue.length < 5 ? teamBlue : teamRed; // Adjust team size to 5
+        const team = teamBlue.length < 5 ? teamBlue : teamRed;
         const opposingTeam = team === teamBlue ? teamRed : teamBlue;
 
         const eloDifference = opposingTeam.length
@@ -81,25 +136,22 @@ function createRandomMatch() {
             : 0;
 
         if (eloDifference <= 100) {
-            team.push(player); // Push the entire Player object
+            team.push(player);
         }
     }
 
-    assignRandomRoles(teamBlue); // Assign roles to teamBlue
-    assignRandomRoles(teamRed);  // Assign roles to teamRed
-    assignRandomChampions(teamBlue); // Gán tướng cho teamBlue
-    assignRandomChampions(teamRed);  // Gán tướng cho teamRed
+    assignRandomRoles(teamBlue);
+    assignRandomRoles(teamRed);
+    assignRandomChampions(teamBlue);
+    assignRandomChampions(teamRed);
 
     const result = generateRandomResult(teamBlue, teamRed);
-    const matchId = generateMatchId(); // Generate unique match ID
+    const matchId = generateMatchId();
 
     const teamBlueStats = calculateTeamStats(teamBlue, result.stats);
     const teamRedStats = calculateTeamStats(teamRed, result.stats);
 
-    // Update players.json
     savePlayers([...randomPlayers]);
-
-    // Save match data to matches.json
     saveMatchToFile({
         id: matchId,
         teamBlue,
@@ -108,8 +160,6 @@ function createRandomMatch() {
         teamRedStats,
         winner: result.winner
     });
-
-    // Save detailed player changes to player-changes.json
     savePlayerChanges(matchId, teamBlue, teamRed, result.stats);
 
     return {
@@ -143,11 +193,11 @@ function generateRandomResult(teamBlue, teamRed) {
     const stats = {};
     const allPlayers = [...teamBlue, ...teamRed];
 
-    const totalKillsBlue = Math.floor(Math.random() * 30) + 10; // Random total kills for blue team
-    const totalKillsRed = Math.floor(Math.random() * 30) + 10; // Random total kills for red team
+    const totalKillsBlue = Math.floor(Math.random() * 30) + 10;
+    const totalKillsRed = Math.floor(Math.random() * 30) + 10;
 
-    const totalDeathsBlue = totalKillsRed; // Blue team's deaths equal Red team's kills
-    const totalDeathsRed = totalKillsBlue; // Red team's deaths equal Blue team's kills
+    const totalDeathsBlue = totalKillsRed;
+    const totalDeathsRed = totalKillsBlue;
     const distributeStats = (team, totalKills, totalDeaths) => {
         let remainingKills = totalKills;
         let remainingDeaths = totalDeaths;
@@ -156,22 +206,22 @@ function generateRandomResult(teamBlue, teamRed) {
             const isLastPlayer = index === team.length - 1;
 
             const kills = isLastPlayer
-                ? remainingKills // Assign remaining kills to the last player
+                ? remainingKills
                 : Math.floor(Math.random() * (remainingKills / (team.length - index)));
 
             const deaths = isLastPlayer
-                ? remainingDeaths // Assign remaining deaths to the last player
+                ? remainingDeaths
                 : Math.floor(Math.random() * (remainingDeaths / (team.length - index)));
 
             remainingKills -= kills;
             remainingDeaths -= deaths;
 
             const assists = Math.min(
-                Math.floor(Math.random() * (kills * 4 - kills + 1)) + kills, // Assists between kills and kills * 4
-                totalKills // Ensure assists do not exceed total team kills
+                Math.floor(Math.random() * (kills * 4 - kills + 1)) + kills,
+                totalKills
             );
 
-            const damage = Math.max(1000, Math.floor(Math.random() * 15000)); // Damage at least 1000
+            const damage = Math.max(1000, Math.floor(Math.random() * 15000));
 
             stats[player.id] = { kills, deaths, assists, gold: Math.floor((kills + assists) / Math.max(1, deaths) * 1000), damage };
         });
@@ -182,32 +232,9 @@ function generateRandomResult(teamBlue, teamRed) {
 
     const winner = Math.random() < 0.5 ? 'blue' : 'red';
     updatePlayerStats(winner, teamBlue, teamRed, stats);
-    updateWinRates(teamBlue, teamRed, winner); // Update win rates
+    updateWinRates(teamBlue, teamRed, winner);
 
     return { winner, stats };
-}
-
-function savePlayerChanges(matchId, teamBlue, teamRed, stats) {
-    const changesFilePath = 'player_changes.json';
-    const changes = fs.existsSync(changesFilePath) ? JSON.parse(fs.readFileSync(changesFilePath, 'utf-8')) : [];
-    const matchChanges = {
-        matchId,
-        changes: [...teamBlue, ...teamRed].map(player => ({
-            playerId: player.id,
-            champion: player.champion || "Unknown", // Lưu tên tướng đã chơi
-            role: player.role || "Unknown", // Lưu role đã chơi
-            eloChange: player.eloChange ?? 0,
-            rankPointChange: player.rankPointChange ?? 0,
-            stats: {
-                kills: stats[player.id]?.kills || 0,
-                deaths: stats[player.id]?.deaths || 0,
-                assists: stats[player.id]?.assists || 0,
-                damage: stats[player.id]?.damage || 0
-            }
-        }))
-    };
-    changes.push(matchChanges);
-    fs.writeFileSync(changesFilePath, JSON.stringify(changes, null, 2), 'utf-8');
 }
 
 function updatePlayerStats(winner, teamBlue, teamRed, stats) {
@@ -226,7 +253,7 @@ function updatePlayerStats(winner, teamBlue, teamRed, stats) {
 
         if (player.elo == null) {
             console.error(`Player ${player.id} has null elo. Setting to default value 0.`);
-            player.elo = 0; // Default value if elo is null
+            player.elo = 0;
         }
 
         const adjustedScore = score * eloAdjustmentFactor;
@@ -234,8 +261,8 @@ function updatePlayerStats(winner, teamBlue, teamRed, stats) {
         player.elo += adjustedScore;
         player.rankPoint = Math.max(0, player.rankPoint);
         player.elo = Math.max(0, player.elo);
-        player.eloChange = Math.round(adjustedScore ?? 0); // Store as integer
-        player.rankPointChange = Math.round(adjustedScore ?? 0); // Store as integer
+        player.eloChange = Math.round(adjustedScore ?? 0);
+        player.rankPointChange = Math.round(adjustedScore ?? 0);
     });
 
     losingTeam.forEach(player => {
@@ -245,16 +272,16 @@ function updatePlayerStats(winner, teamBlue, teamRed, stats) {
 
         if (player.elo == null) {
             console.error(`Player ${player.id} has null elo. Setting to default value 0.`);
-            player.elo = 0; // Default value if elo is null
+            player.elo = 0;
         }
 
-        const penalty = Math.max(0, score) * eloAdjustmentFactor; // Apply adjustment factor
+        const penalty = Math.max(0, score) * eloAdjustmentFactor;
         player.rankPoint -= penalty;
         player.elo -= penalty;
         player.rankPoint = Math.max(0, player.rankPoint);
         player.elo = Math.max(0, player.elo);
-        player.eloChange = -Math.round(penalty ?? 0); // Store as integer
-        player.rankPointChange = -Math.round(penalty ?? 0); // Store as integer
+        player.eloChange = -Math.round(penalty ?? 0);
+        player.rankPointChange = -Math.round(penalty ?? 0);
     });
 }
 
@@ -264,44 +291,15 @@ function updateWinRates(teamBlue, teamRed, winner) {
 
     winningTeam.forEach(player => {
         player.matchesPlayed = (player.matchesPlayed || 0) + 1;
-        const previousWinRate = player.winRate || 0; // Default to 0 if null or undefined
+        const previousWinRate = player.winRate || 0;
         player.winRate = parseFloat(((previousWinRate * (player.matchesPlayed - 1) + 1) / player.matchesPlayed).toFixed(2));
     });
 
     losingTeam.forEach(player => {
         player.matchesPlayed = (player.matchesPlayed || 0) + 1;
-        const previousWinRate = player.winRate || 0; // Default to 0 if null or undefined
+        const previousWinRate = player.winRate || 0;
         player.winRate = parseFloat(((previousWinRate * (player.matchesPlayed - 1)) / player.matchesPlayed).toFixed(2));
     });
-}
-
-const matchFilePath = 'matches.json';
-const playerChangesFilePath = 'player_changes.json';
-
-function saveMatchToFile(match) {
-    let matches = [];
-    if (fs.existsSync(matchFilePath)) {
-        const fileContent = fs.readFileSync(matchFilePath, 'utf-8');
-        try {
-            matches = JSON.parse(fileContent);
-            if (!Array.isArray(matches)) {
-                console.error('Invalid matches.json format. Resetting to an empty array.');
-                matches = [];
-            }
-        } catch (error) {
-            console.error('Error parsing matches.json. Resetting to an empty array.', error);
-            matches = [];
-        }
-    }
-    matches.push(match);
-    fs.writeFileSync(matchFilePath, JSON.stringify(matches, null, 2), 'utf-8');
-}
-
-function loadMatches() {
-    if (fs.existsSync(matchFilePath)) {
-        return JSON.parse(fs.readFileSync(matchFilePath, 'utf-8'));
-    }
-    return [];
 }
 
 function filterMatchesByPlayer(playerId) {
@@ -328,19 +326,18 @@ function getPlayerMatchDetails(playerId) {
             const team = isBlueTeam ? 'Blue' : 'Red';
             const result = match.result && match.result.winner === (isBlueTeam ? 'blue' : 'red') ? 'Win' : 'Loss';
 
-            // Retrieve player changes from player_changes.json
             const matchChanges = playerChanges.find(change => change.matchId === match.id);
             const playerChange = matchChanges?.changes.find(change => change.playerId === playerId);
 
             if (!playerChange) {
                 console.error(`No player change data found for playerId: ${playerId} in matchId: ${match.id}`);
-                return null; // Skip if no change data is found
+                return null;
             }
 
             return {
                 team,
                 result,
-                champion: playerChange.champion || "Unknown", // Trả về tên tướng đã chơi
+                champion: playerChange.champion || "Unknown",
                 stats: {
                     kills: playerChange.stats.kills,
                     deaths: playerChange.stats.deaths,
@@ -351,20 +348,10 @@ function getPlayerMatchDetails(playerId) {
                 rankPointChange: playerChange.rankPointChange,
             };
         })
-        .filter(detail => detail !== null); // Filter out null entries
+        .filter(detail => detail !== null);
 }
 
-app.get('/get-player-match-details', (req, res) => {
-    const playerId = parseInt(req.query.playerId, 10);
-    if (isNaN(playerId)) {
-        return res.status(400).send({ error: 'Invalid playerId' });
-    }
-    const matchDetails = getPlayerMatchDetails(playerId);
-    res.json(matchDetails);
-});
-
-module.exports = { Match, createRandomMatch, generateRandomResult, updatePlayerStats, saveMatchToFile, loadMatches, filterMatchesByPlayer, getPlayerMatchDetails };
-
-// Example usage:
-// const match = createRandomMatch();
-// saveMatchToFile(match);
+module.exports = {
+    createRandomMatch,
+    loadMatches
+};
