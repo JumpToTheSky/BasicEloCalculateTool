@@ -3,6 +3,24 @@ const { randomPlayers, savePlayers } = require('./Player');
 const express = require('express');
 const app = express();
 
+// Đọc danh sách tướng từ champions.json
+function loadChampions() {
+    const championsFilePath = 'champions.json';
+    if (fs.existsSync(championsFilePath)) {
+        const data = fs.readFileSync(championsFilePath, 'utf-8');
+        try {
+            const champions = JSON.parse(data);
+            if (Array.isArray(champions)) {
+                return champions;
+            }
+        } catch (e) {
+            console.error('Error parsing champions.json:', e);
+        }
+    }
+    return [];
+}
+const championsList = loadChampions();
+
 class Match {
     constructor(id, teamBlue, teamRed, result) {
         this.id = id; // Unique match ID
@@ -14,8 +32,25 @@ class Match {
 
 function assignRandomRoles(team) {
     const roles = ['top', 'mid', 'jungle', 'ad carry', 'support'];
+    // Shuffle roles for each team so each player gets a unique random role
+    const shuffledRoles = roles
+        .map(role => ({ role, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(obj => obj.role);
     team.forEach((player, index) => {
-        player.role = roles[index % roles.length]; // Assign roles cyclically
+        player.role = shuffledRoles[index % roles.length];
+    });
+}
+
+// Gán tướng ngẫu nhiên cho mỗi người chơi
+function assignRandomChampions(team) {
+    team.forEach(player => {
+        if (championsList.length > 0) {
+            const randomIndex = Math.floor(Math.random() * championsList.length);
+            player.champion = championsList[randomIndex];
+        } else {
+            player.champion = "Unknown";
+        }
     });
 }
 
@@ -52,6 +87,8 @@ function createRandomMatch() {
 
     assignRandomRoles(teamBlue); // Assign roles to teamBlue
     assignRandomRoles(teamRed);  // Assign roles to teamRed
+    assignRandomChampions(teamBlue); // Gán tướng cho teamBlue
+    assignRandomChampions(teamRed);  // Gán tướng cho teamRed
 
     const result = generateRandomResult(teamBlue, teamRed);
     const matchId = generateMatchId(); // Generate unique match ID
@@ -157,8 +194,10 @@ function savePlayerChanges(matchId, teamBlue, teamRed, stats) {
         matchId,
         changes: [...teamBlue, ...teamRed].map(player => ({
             playerId: player.id,
-            eloChange: player.eloChange ?? 0, // Đảm bảo giá trị mặc định là 0 nếu null
-            rankPointChange: player.rankPointChange ?? 0, // Đảm bảo giá trị mặc định là 0 nếu null
+            champion: player.champion || "Unknown", // Lưu tên tướng đã chơi
+            role: player.role || "Unknown", // Lưu role đã chơi
+            eloChange: player.eloChange ?? 0,
+            rankPointChange: player.rankPointChange ?? 0,
             stats: {
                 kills: stats[player.id]?.kills || 0,
                 deaths: stats[player.id]?.deaths || 0,
@@ -287,7 +326,7 @@ function getPlayerMatchDetails(playerId) {
         .map(match => {
             const isBlueTeam = match.teamBlue.some(player => player.id === playerId);
             const team = isBlueTeam ? 'Blue' : 'Red';
-            const result = match.result.winner === (isBlueTeam ? 'blue' : 'red') ? 'Win' : 'Loss';
+            const result = match.result && match.result.winner === (isBlueTeam ? 'blue' : 'red') ? 'Win' : 'Loss';
 
             // Retrieve player changes from player_changes.json
             const matchChanges = playerChanges.find(change => change.matchId === match.id);
@@ -301,11 +340,12 @@ function getPlayerMatchDetails(playerId) {
             return {
                 team,
                 result,
+                champion: playerChange.champion || "Unknown", // Trả về tên tướng đã chơi
                 stats: {
-                    kills: null, // No stats available
-                    deaths: null,
-                    assists: null,
-                    damage: null
+                    kills: playerChange.stats.kills,
+                    deaths: playerChange.stats.deaths,
+                    assists: playerChange.stats.assists,
+                    damage: playerChange.stats.damage
                 },
                 eloChange: playerChange.eloChange,
                 rankPointChange: playerChange.rankPointChange,

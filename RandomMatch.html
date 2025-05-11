@@ -13,7 +13,7 @@
     <!-- Fixed Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Player List</a>
+            <a class="navbar-brand" >EloBasiCal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -184,11 +184,16 @@
             const tableBody = document.getElementById('matchHistoryTableBody');
             tableBody.innerHTML = ''; // Clear existing rows
             matches.forEach((match, index) => {
+                // Đặt màu cho winner
+                let winnerColor = '';
+                if (match.winner === 'red') winnerColor = 'red';
+                else if (match.winner === 'blue') winnerColor = 'blue';
+
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${index + 1}</td> <!-- Serial number -->
                     <td>${match.id}</td>
-                    <td>${match.winner}</td>
+                    <td style="color: ${winnerColor}; font-weight: bold;">${match.winner}</td>
                     <td style="color: blue;">
                         ${match.teamBlue.map(player => `<a href="PlayerHistory.html?playerId=${player.id}" style="text-decoration: none; color: blue;">${player.name}</a>`).join(', ')}
                     </td> <!-- Blue team with links -->
