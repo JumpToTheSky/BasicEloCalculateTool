@@ -52,4 +52,4 @@ function loadPlayers() {
 
 const playersData = loadPlayers();
 
-module.exports = { playersData, generateRandomPlayers };
+module.exports = { playersData, generateRandomPlayers, savePlayers };

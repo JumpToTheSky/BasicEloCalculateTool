@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { randomPlayers, savePlayers } = require('./Player');
+const { playersData, savePlayers } = require('./Player');
 const path = require('path');
 
 function loadChampions() {
@@ -110,7 +110,7 @@ function assignRandomChampions(team) {
 }
 
 function createRandomMatch() {
-    const players = [...randomPlayers];
+    const players = [...playersData];
 
     if (players.length === 0) {
         throw new Error('No valid players available to create a match.');
@@ -151,7 +151,7 @@ function createRandomMatch() {
     const teamBlueStats = calculateTeamStats(teamBlue, result.stats);
     const teamRedStats = calculateTeamStats(teamRed, result.stats);
 
-    savePlayers([...randomPlayers]);
+    savePlayers([...playersData]);
     saveMatchToFile({
         id: matchId,
         teamBlue,
