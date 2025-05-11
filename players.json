@@ -10,26 +10,38 @@
   {
     "id": 51590,
     "name": "PhOtn",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.67,
+    "elo": 31.715384615384615,
+    "rankPoint": 31.715384615384615,
+    "role": "ad carry",
+    "champion": "Tristana",
+    "eloChange": 13,
+    "rankPointChange": 13,
+    "matchesPlayed": 3
   },
   {
     "id": 34005,
     "name": "RHByd",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.5,
+    "elo": 1.2,
+    "rankPoint": 1.2,
+    "role": "support",
+    "champion": "Darius",
+    "eloChange": 1,
+    "rankPointChange": 1,
+    "matchesPlayed": 2
   },
   {
     "id": 41241,
     "name": "yvGOf",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 16,
+    "rankPoint": 16,
+    "role": "mid",
+    "champion": "Bard",
+    "eloChange": 16,
+    "rankPointChange": 16,
+    "matchesPlayed": 1
   },
   {
     "id": 43219,
@@ -37,23 +49,35 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "support",
+    "champion": "Singed",
+    "eloChange": -14,
+    "rankPointChange": -14,
+    "matchesPlayed": 1
   },
   {
     "id": 47359,
     "name": "FphCJ",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.67,
+    "elo": 7.524999999999999,
+    "rankPoint": 7.524999999999999,
+    "role": "ad carry",
+    "champion": "Sona",
+    "eloChange": -11,
+    "rankPointChange": -11,
+    "matchesPlayed": 3
   },
   {
     "id": 27067,
     "name": "OsuLp",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 6,
+    "rankPoint": 6,
+    "role": "ad carry",
+    "champion": "Irelia",
+    "eloChange": 6,
+    "rankPointChange": 6,
+    "matchesPlayed": 1
   },
   {
     "id": 22773,
@@ -61,7 +85,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "support",
+    "champion": "Kai'Sa",
+    "eloChange": -1,
+    "rankPointChange": -1,
+    "matchesPlayed": 2
   },
   {
     "id": 67764,
@@ -85,7 +113,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "mid",
+    "champion": "Qiyana",
+    "eloChange": -14,
+    "rankPointChange": -14,
+    "matchesPlayed": 2
   },
   {
     "id": 70958,
@@ -101,7 +133,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "ad carry",
+    "champion": "Fiora",
+    "eloChange": -6,
+    "rankPointChange": -6,
+    "matchesPlayed": 1
   },
   {
     "id": 90880,
@@ -114,18 +150,26 @@
   {
     "id": 23242,
     "name": "JtIDl",
-    "winRate": 0,
+    "winRate": 0.33,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "jungle",
+    "champion": "Zed",
+    "eloChange": -16,
+    "rankPointChange": -16,
+    "matchesPlayed": 3
   },
   {
     "id": 92838,
     "name": "sKFqw",
-    "winRate": 0,
+    "winRate": 0.5,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "jungle",
+    "champion": "Pantheon",
+    "eloChange": -5,
+    "rankPointChange": -5,
+    "matchesPlayed": 2
   },
   {
     "id": 29876,
@@ -133,23 +177,35 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "support",
+    "champion": "Viktor",
+    "eloChange": -15,
+    "rankPointChange": -15,
+    "matchesPlayed": 1
   },
   {
     "id": 11807,
     "name": "HmZCp",
-    "winRate": 0,
+    "winRate": 0.33,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "jungle",
+    "champion": "Tahm Kench",
+    "eloChange": -4,
+    "rankPointChange": -4,
+    "matchesPlayed": 3
   },
   {
     "id": 44078,
     "name": "nJnBF",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 7.721739130434782,
+    "rankPoint": 7.721739130434782,
+    "role": "top",
+    "champion": "Riven",
+    "eloChange": 8,
+    "rankPointChange": 8,
+    "matchesPlayed": 1
   },
   {
     "id": 80915,
@@ -162,10 +218,14 @@
   {
     "id": 70415,
     "name": "UbKDn",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 22.8,
+    "rankPoint": 22.8,
+    "role": "top",
+    "champion": "Sylas",
+    "eloChange": 23,
+    "rankPointChange": 23,
+    "matchesPlayed": 1
   },
   {
     "id": 18514,
@@ -173,7 +233,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "mid",
+    "champion": "Azir",
+    "eloChange": -28,
+    "rankPointChange": -28,
+    "matchesPlayed": 3
   },
   {
     "id": 23404,
@@ -186,18 +250,26 @@
   {
     "id": 71587,
     "name": "iliNf",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 48.87619047619047,
+    "rankPoint": 48.87619047619047,
+    "role": "mid",
+    "champion": "Ashe",
+    "eloChange": 28,
+    "rankPointChange": 28,
+    "matchesPlayed": 3
   },
   {
     "id": 17144,
     "name": "uweSv",
-    "winRate": 0,
+    "winRate": 0.5,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "support",
+    "champion": "Graves",
+    "eloChange": -11,
+    "rankPointChange": -11,
+    "matchesPlayed": 2
   },
   {
     "id": 77551,
@@ -205,7 +277,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "mid",
+    "champion": "Graves",
+    "eloChange": -34,
+    "rankPointChange": -34,
+    "matchesPlayed": 1
   },
   {
     "id": 68654,
@@ -226,18 +302,26 @@
   {
     "id": 70078,
     "name": "aXswi",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 4.8,
+    "rankPoint": 4.8,
+    "role": "support",
+    "champion": "Yuumi",
+    "eloChange": 5,
+    "rankPointChange": 5,
+    "matchesPlayed": 1
   },
   {
     "id": 16378,
     "name": "ZsDpE",
-    "winRate": 0,
+    "winRate": 0.5,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "top",
+    "champion": "Lux",
+    "eloChange": -10,
+    "rankPointChange": -10,
+    "matchesPlayed": 2
   },
   {
     "id": 48091,
@@ -245,15 +329,23 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "mid",
+    "champion": "Anivia",
+    "eloChange": -20,
+    "rankPointChange": -20,
+    "matchesPlayed": 1
   },
   {
     "id": 88154,
     "name": "OgRlb",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.5,
+    "elo": 33.6,
+    "rankPoint": 33.6,
+    "role": "jungle",
+    "champion": "Syndra",
+    "eloChange": 34,
+    "rankPointChange": 34,
+    "matchesPlayed": 2
   },
   {
     "id": 76009,
@@ -266,10 +358,14 @@
   {
     "id": 40573,
     "name": "NlXGm",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.5,
+    "elo": 25.5,
+    "rankPoint": 25.5,
+    "role": "top",
+    "champion": "Ivern",
+    "eloChange": 26,
+    "rankPointChange": 26,
+    "matchesPlayed": 2
   },
   {
     "id": 86950,
@@ -277,7 +373,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "ad carry",
+    "champion": "Master Yi",
+    "eloChange": -6,
+    "rankPointChange": -6,
+    "matchesPlayed": 1
   },
   {
     "id": 18641,
@@ -301,7 +401,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "top",
+    "champion": "Brand",
+    "eloChange": -9,
+    "rankPointChange": -9,
+    "matchesPlayed": 1
   },
   {
     "id": 28594,
@@ -314,26 +418,38 @@
   {
     "id": 31211,
     "name": "lvrec",
-    "winRate": 0,
+    "winRate": 0.33,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "ad carry",
+    "champion": "Varus",
+    "eloChange": -4,
+    "rankPointChange": -4,
+    "matchesPlayed": 3
   },
   {
     "id": 29478,
     "name": "EdxcX",
-    "winRate": 0,
+    "winRate": 0.33,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "ad carry",
+    "champion": "Kha'Zix",
+    "eloChange": -7,
+    "rankPointChange": -7,
+    "matchesPlayed": 3
   },
   {
     "id": 47189,
     "name": "FdKeA",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 10.666666666666666,
+    "rankPoint": 10.666666666666666,
+    "role": "support",
+    "champion": "Sona",
+    "eloChange": 11,
+    "rankPointChange": 11,
+    "matchesPlayed": 1
   },
   {
     "id": 96065,
@@ -354,26 +470,38 @@
   {
     "id": 60701,
     "name": "cxZpH",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.5,
+    "elo": 20.74285714285714,
+    "rankPoint": 20.74285714285714,
+    "role": "support",
+    "champion": "Rammus",
+    "eloChange": 21,
+    "rankPointChange": 21,
+    "matchesPlayed": 2
   },
   {
     "id": 83177,
     "name": "HKibT",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 23.133333333333333,
+    "rankPoint": 23.133333333333333,
+    "role": "support",
+    "champion": "Thresh",
+    "eloChange": 12,
+    "rankPointChange": 12,
+    "matchesPlayed": 2
   },
   {
     "id": 66797,
     "name": "GRnRr",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 21.799999999999997,
+    "rankPoint": 21.799999999999997,
+    "role": "ad carry",
+    "champion": "Pyke",
+    "eloChange": 22,
+    "rankPointChange": 22,
+    "matchesPlayed": 1
   },
   {
     "id": 86364,
@@ -381,7 +509,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "top",
+    "champion": "Sona",
+    "eloChange": -12,
+    "rankPointChange": -12,
+    "matchesPlayed": 1
   },
   {
     "id": 97294,
@@ -394,18 +526,26 @@
   {
     "id": 88372,
     "name": "FpNoB",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 1.2,
+    "rankPoint": 1.2,
+    "role": "mid",
+    "champion": "Talon",
+    "eloChange": 1,
+    "rankPointChange": 1,
+    "matchesPlayed": 1
   },
   {
     "id": 68968,
     "name": "IbEWy",
-    "winRate": 0,
+    "winRate": 0.33,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "support",
+    "champion": "Rammus",
+    "eloChange": -17,
+    "rankPointChange": -17,
+    "matchesPlayed": 3
   },
   {
     "id": 50624,
@@ -413,15 +553,23 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "ad carry",
+    "champion": "Malphite",
+    "eloChange": -10,
+    "rankPointChange": -10,
+    "matchesPlayed": 1
   },
   {
     "id": 52144,
     "name": "dZjEh",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 8,
+    "rankPoint": 8,
+    "role": "top",
+    "champion": "Talon",
+    "eloChange": 8,
+    "rankPointChange": 8,
+    "matchesPlayed": 1
   },
   {
     "id": 75086,
@@ -429,7 +577,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "mid",
+    "champion": "Kindred",
+    "eloChange": -2,
+    "rankPointChange": -2,
+    "matchesPlayed": 1
   },
   {
     "id": 51803,
@@ -442,42 +594,62 @@
   {
     "id": 87805,
     "name": "IfHUl",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.33,
+    "elo": 30,
+    "rankPoint": 30,
+    "role": "mid",
+    "champion": "Vayne",
+    "eloChange": 30,
+    "rankPointChange": 30,
+    "matchesPlayed": 3
   },
   {
     "id": 49411,
     "name": "ktkSw",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 7.199999999999999,
+    "rankPoint": 7.199999999999999,
+    "role": "top",
+    "champion": "Gangplank",
+    "eloChange": 7,
+    "rankPointChange": 7,
+    "matchesPlayed": 1
   },
   {
     "id": 17758,
     "name": "bIfBt",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.67,
+    "elo": 15,
+    "rankPoint": 15,
+    "role": "support",
+    "champion": "Ziggs",
+    "eloChange": 15,
+    "rankPointChange": 15,
+    "matchesPlayed": 3
   },
   {
     "id": 84173,
     "name": "AOYwd",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 13.2,
+    "rankPoint": 13.2,
+    "role": "ad carry",
+    "champion": "Swain",
+    "eloChange": 13,
+    "rankPointChange": 13,
+    "matchesPlayed": 1
   },
   {
     "id": 13886,
     "name": "rucAu",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.75,
+    "elo": 56.87,
+    "rankPoint": 56.87,
+    "role": "jungle",
+    "champion": "Zac",
+    "eloChange": 20,
+    "rankPointChange": 20,
+    "matchesPlayed": 4
   },
   {
     "id": 99060,
@@ -485,15 +657,23 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "jungle",
+    "champion": "Olaf",
+    "eloChange": -16,
+    "rankPointChange": -16,
+    "matchesPlayed": 1
   },
   {
     "id": 35429,
     "name": "Juzys",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 4.2,
+    "rankPoint": 4.2,
+    "role": "top",
+    "champion": "Jax",
+    "eloChange": 4,
+    "rankPointChange": 4,
+    "matchesPlayed": 1
   },
   {
     "id": 73878,
@@ -501,7 +681,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "support",
+    "champion": "Heimerdinger",
+    "eloChange": -13,
+    "rankPointChange": -13,
+    "matchesPlayed": 2
   },
   {
     "id": 79922,
@@ -509,7 +693,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "support",
+    "champion": "Hecarim",
+    "eloChange": -15,
+    "rankPointChange": -15,
+    "matchesPlayed": 2
   },
   {
     "id": 34324,
@@ -517,7 +705,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "jungle",
+    "champion": "Heimerdinger",
+    "eloChange": -28,
+    "rankPointChange": -28,
+    "matchesPlayed": 1
   },
   {
     "id": 72803,
@@ -525,31 +717,47 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "jungle",
+    "champion": "Riven",
+    "eloChange": -5,
+    "rankPointChange": -5,
+    "matchesPlayed": 1
   },
   {
     "id": 94301,
     "name": "pezyq",
-    "winRate": 0,
+    "winRate": 0.33,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "jungle",
+    "champion": "Thresh",
+    "eloChange": -17,
+    "rankPointChange": -17,
+    "matchesPlayed": 3
   },
   {
     "id": 88898,
     "name": "tyXeq",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 19.2,
+    "rankPoint": 19.2,
+    "role": "jungle",
+    "champion": "Vel'Koz",
+    "eloChange": 19,
+    "rankPointChange": 19,
+    "matchesPlayed": 1
   },
   {
     "id": 86169,
     "name": "OJdYd",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 0.67,
+    "elo": 24,
+    "rankPoint": 24,
+    "role": "top",
+    "champion": "Zeri",
+    "eloChange": -1,
+    "rankPointChange": -1,
+    "matchesPlayed": 3
   },
   {
     "id": 24552,
@@ -562,10 +770,14 @@
   {
     "id": 95918,
     "name": "jFWZo",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 31.2,
+    "rankPoint": 31.2,
+    "role": "mid",
+    "champion": "Gangplank",
+    "eloChange": 31,
+    "rankPointChange": 31,
+    "matchesPlayed": 1
   },
   {
     "id": 91653,
@@ -581,7 +793,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "top",
+    "champion": "Jax",
+    "eloChange": -1,
+    "rankPointChange": -1,
+    "matchesPlayed": 1
   },
   {
     "id": 43917,
@@ -589,15 +805,23 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "mid",
+    "champion": "Darius",
+    "eloChange": -15,
+    "rankPointChange": -15,
+    "matchesPlayed": 1
   },
   {
     "id": 39806,
     "name": "hXceX",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 16.2,
+    "rankPoint": 16.2,
+    "role": "top",
+    "champion": "Riven",
+    "eloChange": 16,
+    "rankPointChange": 16,
+    "matchesPlayed": 1
   },
   {
     "id": 83851,
@@ -621,47 +845,71 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "mid",
+    "champion": "Nasus",
+    "eloChange": -6,
+    "rankPointChange": -6,
+    "matchesPlayed": 1
   },
   {
     "id": 34371,
     "name": "myKKO",
-    "winRate": 0,
+    "winRate": 0.33,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "jungle",
+    "champion": "Vi",
+    "eloChange": -7,
+    "rankPointChange": -7,
+    "matchesPlayed": 3
   },
   {
     "id": 33585,
     "name": "UolZl",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 6,
+    "rankPoint": 6,
+    "role": "mid",
+    "champion": "Brand",
+    "eloChange": 6,
+    "rankPointChange": 6,
+    "matchesPlayed": 1
   },
   {
     "id": 33133,
     "name": "NvwCC",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 27.6,
+    "rankPoint": 27.6,
+    "role": "ad carry",
+    "champion": "Viego",
+    "eloChange": 16,
+    "rankPointChange": 16,
+    "matchesPlayed": 2
   },
   {
     "id": 42745,
     "name": "qawBi",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 11,
+    "rankPoint": 11,
+    "role": "ad carry",
+    "champion": "Nami",
+    "eloChange": 11,
+    "rankPointChange": 11,
+    "matchesPlayed": 1
   },
   {
     "id": 78679,
     "name": "Djiye",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 14.399999999999999,
+    "rankPoint": 14.399999999999999,
+    "role": "jungle",
+    "champion": "Xayah",
+    "eloChange": 14,
+    "rankPointChange": 14,
+    "matchesPlayed": 1
   },
   {
     "id": 21369,
@@ -669,7 +917,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "support",
+    "champion": "Nunu & Willump",
+    "eloChange": -22,
+    "rankPointChange": -22,
+    "matchesPlayed": 1
   },
   {
     "id": 35138,
@@ -685,23 +937,35 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "support",
+    "champion": "Shen",
+    "eloChange": -9,
+    "rankPointChange": -9,
+    "matchesPlayed": 1
   },
   {
     "id": 12495,
     "name": "tsDAs",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 13.2,
+    "rankPoint": 13.2,
+    "role": "ad carry",
+    "champion": "Malphite",
+    "eloChange": 13,
+    "rankPointChange": 13,
+    "matchesPlayed": 1
   },
   {
     "id": 18875,
     "name": "SLBbb",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 17.333333333333332,
+    "rankPoint": 17.333333333333332,
+    "role": "ad carry",
+    "champion": "Yone",
+    "eloChange": 17,
+    "rankPointChange": 17,
+    "matchesPlayed": 1
   },
   {
     "id": 45499,
@@ -709,15 +973,23 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "top",
+    "champion": "Azir",
+    "eloChange": -5,
+    "rankPointChange": -5,
+    "matchesPlayed": 1
   },
   {
     "id": 62787,
     "name": "ooCFL",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 3.5999999999999996,
+    "rankPoint": 3.5999999999999996,
+    "role": "jungle",
+    "champion": "Teemo",
+    "eloChange": 4,
+    "rankPointChange": 4,
+    "matchesPlayed": 1
   },
   {
     "id": 32253,
@@ -725,7 +997,11 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "ad carry",
+    "champion": "Seraphine",
+    "eloChange": -13,
+    "rankPointChange": -13,
+    "matchesPlayed": 1
   },
   {
     "id": 59229,
@@ -738,26 +1014,38 @@
   {
     "id": 84221,
     "name": "QJTpm",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 12.4,
+    "rankPoint": 12.4,
+    "role": "jungle",
+    "champion": "Zilean",
+    "eloChange": 10,
+    "rankPointChange": 10,
+    "matchesPlayed": 2
   },
   {
     "id": 23738,
     "name": "UtXFN",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 8,
+    "rankPoint": 8,
+    "role": "ad carry",
+    "champion": "Warwick",
+    "eloChange": 8,
+    "rankPointChange": 8,
+    "matchesPlayed": 1
   },
   {
     "id": 71971,
     "name": "qxAYS",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 15.054545454545453,
+    "rankPoint": 15.054545454545453,
+    "role": "support",
+    "champion": "Swain",
+    "eloChange": 15,
+    "rankPointChange": 15,
+    "matchesPlayed": 1
   },
   {
     "id": 65357,
@@ -770,10 +1058,14 @@
   {
     "id": 66740,
     "name": "HfSfI",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 14.399999999999999,
+    "rankPoint": 14.399999999999999,
+    "role": "ad carry",
+    "champion": "Veigar",
+    "eloChange": 14,
+    "rankPointChange": 14,
+    "matchesPlayed": 1
   },
   {
     "id": 46457,
@@ -781,15 +1073,23 @@
     "winRate": 0,
     "elo": 0,
     "rankPoint": 0,
-    "role": null
+    "role": "ad carry",
+    "champion": "Tristana",
+    "eloChange": -9,
+    "rankPointChange": -9,
+    "matchesPlayed": 1
   },
   {
     "id": 77491,
     "name": "bsihf",
-    "winRate": 0,
-    "elo": 0,
-    "rankPoint": 0,
-    "role": null
+    "winRate": 1,
+    "elo": 18.142857142857142,
+    "rankPoint": 18.142857142857142,
+    "role": "top",
+    "champion": "Twisted Fate",
+    "eloChange": 18,
+    "rankPointChange": 18,
+    "matchesPlayed": 1
   },
   {
     "id": 99545,

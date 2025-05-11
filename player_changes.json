@@ -1,0 +1,1622 @@
+[
+  {
+    "matchId": "match_1746980695961_258",
+    "changes": [
+      {
+        "playerId": 34371,
+        "champion": "Karthus",
+        "role": "jungle",
+        "eloChange": 6,
+        "rankPointChange": 6,
+        "stats": {
+          "kills": 1,
+          "deaths": 1,
+          "assists": 2,
+          "damage": 3345
+        }
+      },
+      {
+        "playerId": 42745,
+        "champion": "Nami",
+        "role": "ad carry",
+        "eloChange": 11,
+        "rankPointChange": 11,
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "damage": 11301
+        }
+      },
+      {
+        "playerId": 17758,
+        "champion": "Akali",
+        "role": "mid",
+        "eloChange": 4,
+        "rankPointChange": 4,
+        "stats": {
+          "kills": 1,
+          "deaths": 2,
+          "assists": 4,
+          "damage": 1000
+        }
+      },
+      {
+        "playerId": 47189,
+        "champion": "Sona",
+        "role": "support",
+        "eloChange": 11,
+        "rankPointChange": 11,
+        "stats": {
+          "kills": 3,
+          "deaths": 6,
+          "assists": 7,
+          "damage": 9144
+        }
+      },
+      {
+        "playerId": 71587,
+        "champion": "Vex",
+        "role": "top",
+        "eloChange": 3,
+        "rankPointChange": 3,
+        "stats": {
+          "kills": 5,
+          "deaths": 7,
+          "assists": 10,
+          "damage": 1000
+        }
+      },
+      {
+        "playerId": 46457,
+        "champion": "Tristana",
+        "role": "ad carry",
+        "eloChange": -9,
+        "rankPointChange": -9,
+        "stats": {
+          "kills": 2,
+          "deaths": 0,
+          "assists": 5,
+          "damage": 2809
+        }
+      },
+      {
+        "playerId": 99060,
+        "champion": "Olaf",
+        "role": "jungle",
+        "eloChange": -16,
+        "rankPointChange": -16,
+        "stats": {
+          "kills": 2,
+          "deaths": 1,
+          "assists": 7,
+          "damage": 7727
+        }
+      },
+      {
+        "playerId": 43917,
+        "champion": "Darius",
+        "role": "mid",
+        "eloChange": -15,
+        "rankPointChange": -15,
+        "stats": {
+          "kills": 1,
+          "deaths": 2,
+          "assists": 4,
+          "damage": 12964
+        }
+      },
+      {
+        "playerId": 43219,
+        "champion": "Singed",
+        "role": "support",
+        "eloChange": -14,
+        "rankPointChange": -14,
+        "stats": {
+          "kills": 2,
+          "deaths": 1,
+          "assists": 6,
+          "damage": 6787
+        }
+      },
+      {
+        "playerId": 68968,
+        "champion": "Aatrox",
+        "role": "top",
+        "eloChange": -16,
+        "rankPointChange": -16,
+        "stats": {
+          "kills": 9,
+          "deaths": 6,
+          "assists": 16,
+          "damage": 12492
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980700673_206",
+    "changes": [
+      {
+        "playerId": 31211,
+        "champion": "Ashe",
+        "role": "mid",
+        "eloChange": 19,
+        "rankPointChange": 19,
+        "stats": {
+          "kills": 4,
+          "deaths": 1,
+          "assists": 6,
+          "damage": 6781
+        }
+      },
+      {
+        "playerId": 16378,
+        "champion": "Ryze",
+        "role": "support",
+        "eloChange": 9,
+        "rankPointChange": 9,
+        "stats": {
+          "kills": 2,
+          "deaths": 4,
+          "assists": 7,
+          "damage": 5178
+        }
+      },
+      {
+        "playerId": 86169,
+        "champion": "Katarina",
+        "role": "jungle",
+        "eloChange": 12,
+        "rankPointChange": 12,
+        "stats": {
+          "kills": 2,
+          "deaths": 2,
+          "assists": 2,
+          "damage": 8344
+        }
+      },
+      {
+        "playerId": 29478,
+        "champion": "Aurelion Sol",
+        "role": "top",
+        "eloChange": 20,
+        "rankPointChange": 20,
+        "stats": {
+          "kills": 4,
+          "deaths": 5,
+          "assists": 14,
+          "damage": 13847
+        }
+      },
+      {
+        "playerId": 23242,
+        "champion": "Renata Glasc",
+        "role": "ad carry",
+        "eloChange": 5,
+        "rankPointChange": 5,
+        "stats": {
+          "kills": 22,
+          "deaths": 18,
+          "assists": 34,
+          "damage": 1000
+        }
+      },
+      {
+        "playerId": 88154,
+        "champion": "Darius",
+        "role": "mid",
+        "eloChange": -12,
+        "rankPointChange": -12,
+        "stats": {
+          "kills": 0,
+          "deaths": 2,
+          "assists": 0,
+          "damage": 10422
+        }
+      },
+      {
+        "playerId": 34371,
+        "champion": "Zilean",
+        "role": "support",
+        "eloChange": -11,
+        "rankPointChange": -11,
+        "stats": {
+          "kills": 7,
+          "deaths": 4,
+          "assists": 22,
+          "damage": 2455
+        }
+      },
+      {
+        "playerId": 79922,
+        "champion": "Swain",
+        "role": "top",
+        "eloChange": -9,
+        "rankPointChange": -9,
+        "stats": {
+          "kills": 5,
+          "deaths": 8,
+          "assists": 5,
+          "damage": 6751
+        }
+      },
+      {
+        "playerId": 58130,
+        "champion": "Wukong",
+        "role": "jungle",
+        "eloChange": -10,
+        "rankPointChange": -10,
+        "stats": {
+          "kills": 1,
+          "deaths": 7,
+          "assists": 3,
+          "damage": 8800
+        }
+      },
+      {
+        "playerId": 87805,
+        "champion": "Talon",
+        "role": "ad carry",
+        "eloChange": -8,
+        "rankPointChange": -8,
+        "stats": {
+          "kills": 17,
+          "deaths": 13,
+          "assists": 30,
+          "damage": 3588
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980701307_639",
+    "changes": [
+      {
+        "playerId": 33133,
+        "champion": "Syndra",
+        "role": "support",
+        "eloChange": 12,
+        "rankPointChange": 12,
+        "stats": {
+          "kills": 1,
+          "deaths": 5,
+          "assists": 4,
+          "damage": 9761
+        }
+      },
+      {
+        "playerId": 94301,
+        "champion": "Jhin",
+        "role": "jungle",
+        "eloChange": 31,
+        "rankPointChange": 31,
+        "stats": {
+          "kills": 6,
+          "deaths": 0,
+          "assists": 13,
+          "damage": 7923
+        }
+      },
+      {
+        "playerId": 13886,
+        "champion": "Vayne",
+        "role": "mid",
+        "eloChange": 25,
+        "rankPointChange": 25,
+        "stats": {
+          "kills": 3,
+          "deaths": 2,
+          "assists": 11,
+          "damage": 14484
+        }
+      },
+      {
+        "playerId": 66740,
+        "champion": "Veigar",
+        "role": "ad carry",
+        "eloChange": 14,
+        "rankPointChange": 14,
+        "stats": {
+          "kills": 0,
+          "deaths": 3,
+          "assists": 0,
+          "damage": 12120
+        }
+      },
+      {
+        "playerId": 44078,
+        "champion": "Riven",
+        "role": "top",
+        "eloChange": 8,
+        "rankPointChange": 8,
+        "stats": {
+          "kills": 23,
+          "deaths": 23,
+          "assists": 33,
+          "damage": 4347
+        }
+      },
+      {
+        "playerId": 73878,
+        "champion": "Tryndamere",
+        "role": "support",
+        "eloChange": -11,
+        "rankPointChange": -11,
+        "stats": {
+          "kills": 2,
+          "deaths": 0,
+          "assists": 3,
+          "damage": 4831
+        }
+      },
+      {
+        "playerId": 19998,
+        "champion": "Fiora",
+        "role": "ad carry",
+        "eloChange": -6,
+        "rankPointChange": -6,
+        "stats": {
+          "kills": 4,
+          "deaths": 8,
+          "assists": 6,
+          "damage": 4370
+        }
+      },
+      {
+        "playerId": 29478,
+        "champion": "Kled",
+        "role": "top",
+        "eloChange": -21,
+        "rankPointChange": -21,
+        "stats": {
+          "kills": 6,
+          "deaths": 4,
+          "assists": 24,
+          "damage": 10076
+        }
+      },
+      {
+        "playerId": 77551,
+        "champion": "Graves",
+        "role": "mid",
+        "eloChange": -34,
+        "rankPointChange": -34,
+        "stats": {
+          "kills": 9,
+          "deaths": 2,
+          "assists": 19,
+          "damage": 14690
+        }
+      },
+      {
+        "playerId": 22773,
+        "champion": "Ryze",
+        "role": "jungle",
+        "eloChange": -20,
+        "rankPointChange": -20,
+        "stats": {
+          "kills": 12,
+          "deaths": 19,
+          "assists": 33,
+          "damage": 14878
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980701774_402",
+    "changes": [
+      {
+        "playerId": 21369,
+        "champion": "Nunu & Willump",
+        "role": "support",
+        "eloChange": -22,
+        "rankPointChange": -22,
+        "stats": {
+          "kills": 3,
+          "deaths": 1,
+          "assists": 3,
+          "damage": 12915
+        }
+      },
+      {
+        "playerId": 86364,
+        "champion": "Sona",
+        "role": "top",
+        "eloChange": -12,
+        "rankPointChange": -12,
+        "stats": {
+          "kills": 2,
+          "deaths": 4,
+          "assists": 2,
+          "damage": 9223
+        }
+      },
+      {
+        "playerId": 87805,
+        "champion": "Yuumi",
+        "role": "jungle",
+        "eloChange": -22,
+        "rankPointChange": -22,
+        "stats": {
+          "kills": 5,
+          "deaths": 5,
+          "assists": 20,
+          "damage": 13362
+        }
+      },
+      {
+        "playerId": 94301,
+        "champion": "Sivir",
+        "role": "ad carry",
+        "eloChange": -20,
+        "rankPointChange": -20,
+        "stats": {
+          "kills": 2,
+          "deaths": 2,
+          "assists": 8,
+          "damage": 12807
+        }
+      },
+      {
+        "playerId": 18514,
+        "champion": "Rakan",
+        "role": "mid",
+        "eloChange": -17,
+        "rankPointChange": -17,
+        "stats": {
+          "kills": 14,
+          "deaths": 10,
+          "assists": 18,
+          "damage": 11681
+        }
+      },
+      {
+        "playerId": 68968,
+        "champion": "Qiyana",
+        "role": "jungle",
+        "eloChange": 5,
+        "rankPointChange": 5,
+        "stats": {
+          "kills": 0,
+          "deaths": 3,
+          "assists": 0,
+          "damage": 4219
+        }
+      },
+      {
+        "playerId": 84173,
+        "champion": "Swain",
+        "role": "ad carry",
+        "eloChange": 13,
+        "rankPointChange": 13,
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "damage": 11651
+        }
+      },
+      {
+        "playerId": 71587,
+        "champion": "Ryze",
+        "role": "support",
+        "eloChange": 17,
+        "rankPointChange": 17,
+        "stats": {
+          "kills": 3,
+          "deaths": 4,
+          "assists": 11,
+          "damage": 11852
+        }
+      },
+      {
+        "playerId": 51590,
+        "champion": "Soraka",
+        "role": "top",
+        "eloChange": 25,
+        "rankPointChange": 25,
+        "stats": {
+          "kills": 2,
+          "deaths": 1,
+          "assists": 8,
+          "damage": 11223
+        }
+      },
+      {
+        "playerId": 11807,
+        "champion": "Kassadin",
+        "role": "mid",
+        "eloChange": 16,
+        "rankPointChange": 16,
+        "stats": {
+          "kills": 17,
+          "deaths": 18,
+          "assists": 22,
+          "damage": 11509
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980702025_172",
+    "changes": [
+      {
+        "playerId": 18514,
+        "champion": "Thresh",
+        "role": "top",
+        "eloChange": -23,
+        "rankPointChange": -23,
+        "stats": {
+          "kills": 4,
+          "deaths": 0,
+          "assists": 9,
+          "damage": 6475
+        }
+      },
+      {
+        "playerId": 72803,
+        "champion": "Riven",
+        "role": "jungle",
+        "eloChange": -5,
+        "rankPointChange": -5,
+        "stats": {
+          "kills": 0,
+          "deaths": 2,
+          "assists": 0,
+          "damage": 4940
+        }
+      },
+      {
+        "playerId": 73878,
+        "champion": "Heimerdinger",
+        "role": "support",
+        "eloChange": -13,
+        "rankPointChange": -13,
+        "stats": {
+          "kills": 2,
+          "deaths": 0,
+          "assists": 6,
+          "damage": 3440
+        }
+      },
+      {
+        "playerId": 13886,
+        "champion": "Vex",
+        "role": "ad carry",
+        "eloChange": -16,
+        "rankPointChange": -16,
+        "stats": {
+          "kills": 1,
+          "deaths": 3,
+          "assists": 2,
+          "damage": 12971
+        }
+      },
+      {
+        "playerId": 60701,
+        "champion": "Singed",
+        "role": "mid",
+        "eloChange": -6,
+        "rankPointChange": -6,
+        "stats": {
+          "kills": 15,
+          "deaths": 11,
+          "assists": 18,
+          "damage": 2244
+        }
+      },
+      {
+        "playerId": 17144,
+        "champion": "Lillia",
+        "role": "ad carry",
+        "eloChange": 8,
+        "rankPointChange": 8,
+        "stats": {
+          "kills": 0,
+          "deaths": 3,
+          "assists": 0,
+          "damage": 7808
+        }
+      },
+      {
+        "playerId": 49411,
+        "champion": "Gangplank",
+        "role": "top",
+        "eloChange": 7,
+        "rankPointChange": 7,
+        "stats": {
+          "kills": 0,
+          "deaths": 1,
+          "assists": 0,
+          "damage": 6195
+        }
+      },
+      {
+        "playerId": 88154,
+        "champion": "Syndra",
+        "role": "jungle",
+        "eloChange": 34,
+        "rankPointChange": 34,
+        "stats": {
+          "kills": 4,
+          "deaths": 0,
+          "assists": 14,
+          "damage": 10447
+        }
+      },
+      {
+        "playerId": 70078,
+        "champion": "Yuumi",
+        "role": "support",
+        "eloChange": 5,
+        "rankPointChange": 5,
+        "stats": {
+          "kills": 0,
+          "deaths": 4,
+          "assists": 0,
+          "damage": 4880
+        }
+      },
+      {
+        "playerId": 92838,
+        "champion": "Vladimir",
+        "role": "mid",
+        "eloChange": 5,
+        "rankPointChange": 5,
+        "stats": {
+          "kills": 12,
+          "deaths": 14,
+          "assists": 16,
+          "damage": 2841
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980702216_829",
+    "changes": [
+      {
+        "playerId": 62787,
+        "champion": "Teemo",
+        "role": "jungle",
+        "eloChange": 4,
+        "rankPointChange": 4,
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "damage": 3909
+        }
+      },
+      {
+        "playerId": 88372,
+        "champion": "Talon",
+        "role": "mid",
+        "eloChange": 1,
+        "rankPointChange": 1,
+        "stats": {
+          "kills": 0,
+          "deaths": 1,
+          "assists": 0,
+          "damage": 1000
+        }
+      },
+      {
+        "playerId": 33133,
+        "champion": "Viego",
+        "role": "ad carry",
+        "eloChange": 16,
+        "rankPointChange": 16,
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "damage": 13928
+        }
+      },
+      {
+        "playerId": 39806,
+        "champion": "Riven",
+        "role": "top",
+        "eloChange": 16,
+        "rankPointChange": 16,
+        "stats": {
+          "kills": 3,
+          "deaths": 2,
+          "assists": 10,
+          "damage": 7412
+        }
+      },
+      {
+        "playerId": 71971,
+        "champion": "Swain",
+        "role": "support",
+        "eloChange": 15,
+        "rankPointChange": 15,
+        "stats": {
+          "kills": 7,
+          "deaths": 11,
+          "assists": 10,
+          "damage": 11923
+        }
+      },
+      {
+        "playerId": 16378,
+        "champion": "Lux",
+        "role": "top",
+        "eloChange": -10,
+        "rankPointChange": -10,
+        "stats": {
+          "kills": 1,
+          "deaths": 1,
+          "assists": 4,
+          "damage": 3052
+        }
+      },
+      {
+        "playerId": 61731,
+        "champion": "Nasus",
+        "role": "mid",
+        "eloChange": -6,
+        "rankPointChange": -6,
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "damage": 5009
+        }
+      },
+      {
+        "playerId": 50624,
+        "champion": "Malphite",
+        "role": "ad carry",
+        "eloChange": -10,
+        "rankPointChange": -10,
+        "stats": {
+          "kills": 0,
+          "deaths": 1,
+          "assists": 0,
+          "damage": 8947
+        }
+      },
+      {
+        "playerId": 94301,
+        "champion": "Thresh",
+        "role": "jungle",
+        "eloChange": -17,
+        "rankPointChange": -17,
+        "stats": {
+          "kills": 1,
+          "deaths": 0,
+          "assists": 4,
+          "damage": 9106
+        }
+      },
+      {
+        "playerId": 79922,
+        "champion": "Hecarim",
+        "role": "support",
+        "eloChange": -15,
+        "rankPointChange": -15,
+        "stats": {
+          "kills": 12,
+          "deaths": 8,
+          "assists": 14,
+          "damage": 9070
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980702394_354",
+    "changes": [
+      {
+        "playerId": 86169,
+        "champion": "Vi",
+        "role": "jungle",
+        "eloChange": 13,
+        "rankPointChange": 13,
+        "stats": {
+          "kills": 3,
+          "deaths": 4,
+          "assists": 9,
+          "damage": 10816
+        }
+      },
+      {
+        "playerId": 47359,
+        "champion": "Nidalee",
+        "role": "support",
+        "eloChange": 10,
+        "rankPointChange": 10,
+        "stats": {
+          "kills": 3,
+          "deaths": 8,
+          "assists": 6,
+          "damage": 9313
+        }
+      },
+      {
+        "playerId": 18875,
+        "champion": "Yone",
+        "role": "ad carry",
+        "eloChange": 17,
+        "rankPointChange": 17,
+        "stats": {
+          "kills": 8,
+          "deaths": 3,
+          "assists": 11,
+          "damage": 11231
+        }
+      },
+      {
+        "playerId": 33585,
+        "champion": "Brand",
+        "role": "mid",
+        "eloChange": 6,
+        "rankPointChange": 6,
+        "stats": {
+          "kills": 0,
+          "deaths": 10,
+          "assists": 0,
+          "damage": 6081
+        }
+      },
+      {
+        "playerId": 77491,
+        "champion": "Twisted Fate",
+        "role": "top",
+        "eloChange": 18,
+        "rankPointChange": 18,
+        "stats": {
+          "kills": 22,
+          "deaths": 14,
+          "assists": 36,
+          "damage": 14014
+        }
+      },
+      {
+        "playerId": 86950,
+        "champion": "Master Yi",
+        "role": "ad carry",
+        "eloChange": -6,
+        "rankPointChange": -6,
+        "stats": {
+          "kills": 4,
+          "deaths": 3,
+          "assists": 9,
+          "damage": 2399
+        }
+      },
+      {
+        "playerId": 75086,
+        "champion": "Kindred",
+        "role": "mid",
+        "eloChange": -2,
+        "rankPointChange": -2,
+        "stats": {
+          "kills": 1,
+          "deaths": 6,
+          "assists": 2,
+          "damage": 1640
+        }
+      },
+      {
+        "playerId": 34005,
+        "champion": "Xerath",
+        "role": "top",
+        "eloChange": -11,
+        "rankPointChange": -11,
+        "stats": {
+          "kills": 11,
+          "deaths": 4,
+          "assists": 26,
+          "damage": 2971
+        }
+      },
+      {
+        "playerId": 34324,
+        "champion": "Heimerdinger",
+        "role": "jungle",
+        "eloChange": -28,
+        "rankPointChange": -28,
+        "stats": {
+          "kills": 9,
+          "deaths": 2,
+          "assists": 30,
+          "damage": 8642
+        }
+      },
+      {
+        "playerId": 29876,
+        "champion": "Viktor",
+        "role": "support",
+        "eloChange": -15,
+        "rankPointChange": -15,
+        "stats": {
+          "kills": 14,
+          "deaths": 21,
+          "assists": 29,
+          "damage": 13457
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980702572_986",
+    "changes": [
+      {
+        "playerId": 84221,
+        "champion": "Warwick",
+        "role": "top",
+        "eloChange": 2,
+        "rankPointChange": 2,
+        "stats": {
+          "kills": 0,
+          "deaths": 2,
+          "assists": 0,
+          "damage": 2974
+        }
+      },
+      {
+        "playerId": 95918,
+        "champion": "Gangplank",
+        "role": "mid",
+        "eloChange": 31,
+        "rankPointChange": 31,
+        "stats": {
+          "kills": 7,
+          "deaths": 1,
+          "assists": 8,
+          "damage": 11004
+        }
+      },
+      {
+        "playerId": 83177,
+        "champion": "Xayah",
+        "role": "support",
+        "eloChange": 11,
+        "rankPointChange": 11,
+        "stats": {
+          "kills": 2,
+          "deaths": 2,
+          "assists": 4,
+          "damage": 6685
+        }
+      },
+      {
+        "playerId": 13886,
+        "champion": "Garen",
+        "role": "jungle",
+        "eloChange": 28,
+        "rankPointChange": 28,
+        "stats": {
+          "kills": 8,
+          "deaths": 2,
+          "assists": 17,
+          "damage": 10953
+        }
+      },
+      {
+        "playerId": 66797,
+        "champion": "Pyke",
+        "role": "ad carry",
+        "eloChange": 22,
+        "rankPointChange": 22,
+        "stats": {
+          "kills": 16,
+          "deaths": 6,
+          "assists": 33,
+          "damage": 10554
+        }
+      },
+      {
+        "playerId": 34371,
+        "champion": "Vi",
+        "role": "jungle",
+        "eloChange": -7,
+        "rankPointChange": -7,
+        "stats": {
+          "kills": 0,
+          "deaths": 2,
+          "assists": 0,
+          "damage": 5993
+        }
+      },
+      {
+        "playerId": 40573,
+        "champion": "Senna",
+        "role": "mid",
+        "eloChange": -16,
+        "rankPointChange": -16,
+        "stats": {
+          "kills": 1,
+          "deaths": 2,
+          "assists": 4,
+          "damage": 11318
+        }
+      },
+      {
+        "playerId": 91126,
+        "champion": "Jax",
+        "role": "top",
+        "eloChange": -1,
+        "rankPointChange": -1,
+        "stats": {
+          "kills": 0,
+          "deaths": 5,
+          "assists": 0,
+          "damage": 1975
+        }
+      },
+      {
+        "playerId": 31211,
+        "champion": "Lee Sin",
+        "role": "support",
+        "eloChange": -25,
+        "rankPointChange": -25,
+        "stats": {
+          "kills": 4,
+          "deaths": 1,
+          "assists": 13,
+          "damage": 4143
+        }
+      },
+      {
+        "playerId": 17758,
+        "champion": "Karma",
+        "role": "ad carry",
+        "eloChange": -12,
+        "rankPointChange": -12,
+        "stats": {
+          "kills": 8,
+          "deaths": 23,
+          "assists": 13,
+          "damage": 9263
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980702756_995",
+    "changes": [
+      {
+        "playerId": 27067,
+        "champion": "Irelia",
+        "role": "ad carry",
+        "eloChange": 6,
+        "rankPointChange": 6,
+        "stats": {
+          "kills": 1,
+          "deaths": 1,
+          "assists": 3,
+          "damage": 1529
+        }
+      },
+      {
+        "playerId": 70415,
+        "champion": "Sylas",
+        "role": "top",
+        "eloChange": 23,
+        "rankPointChange": 23,
+        "stats": {
+          "kills": 2,
+          "deaths": 2,
+          "assists": 8,
+          "damage": 14570
+        }
+      },
+      {
+        "playerId": 87805,
+        "champion": "Vayne",
+        "role": "mid",
+        "eloChange": 30,
+        "rankPointChange": 30,
+        "stats": {
+          "kills": 3,
+          "deaths": 0,
+          "assists": 12,
+          "damage": 10740
+        }
+      },
+      {
+        "playerId": 78679,
+        "champion": "Xayah",
+        "role": "jungle",
+        "eloChange": 14,
+        "rankPointChange": 14,
+        "stats": {
+          "kills": 3,
+          "deaths": 1,
+          "assists": 8,
+          "damage": 1000
+        }
+      },
+      {
+        "playerId": 60701,
+        "champion": "Rammus",
+        "role": "support",
+        "eloChange": 21,
+        "rankPointChange": 21,
+        "stats": {
+          "kills": 7,
+          "deaths": 7,
+          "assists": 16,
+          "damage": 14901
+        }
+      },
+      {
+        "playerId": 23242,
+        "champion": "Varus",
+        "role": "top",
+        "eloChange": -1,
+        "rankPointChange": -1,
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "damage": 1076
+        }
+      },
+      {
+        "playerId": 51590,
+        "champion": "Urgot",
+        "role": "jungle",
+        "eloChange": -7,
+        "rankPointChange": -7,
+        "stats": {
+          "kills": 1,
+          "deaths": 2,
+          "assists": 4,
+          "damage": 3644
+        }
+      },
+      {
+        "playerId": 22773,
+        "champion": "Kai'Sa",
+        "role": "support",
+        "eloChange": -1,
+        "rankPointChange": -1,
+        "stats": {
+          "kills": 0,
+          "deaths": 3,
+          "assists": 0,
+          "damage": 1536
+        }
+      },
+      {
+        "playerId": 31211,
+        "champion": "Varus",
+        "role": "ad carry",
+        "eloChange": -4,
+        "rankPointChange": -4,
+        "stats": {
+          "kills": 1,
+          "deaths": 3,
+          "assists": 4,
+          "damage": 1000
+        }
+      },
+      {
+        "playerId": 48091,
+        "champion": "Anivia",
+        "role": "mid",
+        "eloChange": -20,
+        "rankPointChange": -20,
+        "stats": {
+          "kills": 9,
+          "deaths": 8,
+          "assists": 10,
+          "damage": 14367
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980702931_716",
+    "changes": [
+      {
+        "playerId": 86169,
+        "champion": "Zeri",
+        "role": "top",
+        "eloChange": -1,
+        "rankPointChange": -1,
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "damage": 1000
+        }
+      },
+      {
+        "playerId": 81810,
+        "champion": "Shen",
+        "role": "support",
+        "eloChange": -9,
+        "rankPointChange": -9,
+        "stats": {
+          "kills": 2,
+          "deaths": 7,
+          "assists": 2,
+          "damage": 8998
+        }
+      },
+      {
+        "playerId": 23242,
+        "champion": "Zed",
+        "role": "jungle",
+        "eloChange": -16,
+        "rankPointChange": -16,
+        "stats": {
+          "kills": 2,
+          "deaths": 0,
+          "assists": 8,
+          "damage": 5892
+        }
+      },
+      {
+        "playerId": 32253,
+        "champion": "Seraphine",
+        "role": "ad carry",
+        "eloChange": -13,
+        "rankPointChange": -13,
+        "stats": {
+          "kills": 3,
+          "deaths": 10,
+          "assists": 5,
+          "damage": 12117
+        }
+      },
+      {
+        "playerId": 58130,
+        "champion": "Qiyana",
+        "role": "mid",
+        "eloChange": -14,
+        "rankPointChange": -14,
+        "stats": {
+          "kills": 6,
+          "deaths": 19,
+          "assists": 9,
+          "damage": 13710
+        }
+      },
+      {
+        "playerId": 40573,
+        "champion": "Ivern",
+        "role": "top",
+        "eloChange": 26,
+        "rankPointChange": 26,
+        "stats": {
+          "kills": 6,
+          "deaths": 2,
+          "assists": 19,
+          "damage": 13308
+        }
+      },
+      {
+        "playerId": 23738,
+        "champion": "Warwick",
+        "role": "ad carry",
+        "eloChange": 8,
+        "rankPointChange": 8,
+        "stats": {
+          "kills": 3,
+          "deaths": 2,
+          "assists": 9,
+          "damage": 2909
+        }
+      },
+      {
+        "playerId": 84221,
+        "champion": "Zilean",
+        "role": "jungle",
+        "eloChange": 10,
+        "rankPointChange": 10,
+        "stats": {
+          "kills": 1,
+          "deaths": 0,
+          "assists": 1,
+          "damage": 8411
+        }
+      },
+      {
+        "playerId": 71587,
+        "champion": "Ashe",
+        "role": "mid",
+        "eloChange": 28,
+        "rankPointChange": 28,
+        "stats": {
+          "kills": 10,
+          "deaths": 3,
+          "assists": 36,
+          "damage": 13141
+        }
+      },
+      {
+        "playerId": 83177,
+        "champion": "Thresh",
+        "role": "support",
+        "eloChange": 12,
+        "rankPointChange": 12,
+        "stats": {
+          "kills": 16,
+          "deaths": 6,
+          "assists": 22,
+          "damage": 6045
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980703094_404",
+    "changes": [
+      {
+        "playerId": 35429,
+        "champion": "Jax",
+        "role": "top",
+        "eloChange": 4,
+        "rankPointChange": 4,
+        "stats": {
+          "kills": 1,
+          "deaths": 2,
+          "assists": 4,
+          "damage": 1673
+        }
+      },
+      {
+        "playerId": 88898,
+        "champion": "Vel'Koz",
+        "role": "jungle",
+        "eloChange": 19,
+        "rankPointChange": 19,
+        "stats": {
+          "kills": 3,
+          "deaths": 0,
+          "assists": 12,
+          "damage": 1715
+        }
+      },
+      {
+        "playerId": 34005,
+        "champion": "Darius",
+        "role": "support",
+        "eloChange": 1,
+        "rankPointChange": 1,
+        "stats": {
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "damage": 1000
+        }
+      },
+      {
+        "playerId": 47359,
+        "champion": "Fizz",
+        "role": "mid",
+        "eloChange": 8,
+        "rankPointChange": 8,
+        "stats": {
+          "kills": 0,
+          "deaths": 3,
+          "assists": 0,
+          "damage": 7435
+        }
+      },
+      {
+        "playerId": 12495,
+        "champion": "Malphite",
+        "role": "ad carry",
+        "eloChange": 13,
+        "rankPointChange": 13,
+        "stats": {
+          "kills": 10,
+          "deaths": 8,
+          "assists": 14,
+          "damage": 8470
+        }
+      },
+      {
+        "playerId": 68968,
+        "champion": "Rammus",
+        "role": "support",
+        "eloChange": -17,
+        "rankPointChange": -17,
+        "stats": {
+          "kills": 1,
+          "deaths": 1,
+          "assists": 1,
+          "damage": 12034
+        }
+      },
+      {
+        "playerId": 11807,
+        "champion": "Elise",
+        "role": "mid",
+        "eloChange": -16,
+        "rankPointChange": -16,
+        "stats": {
+          "kills": 0,
+          "deaths": 2,
+          "assists": 0,
+          "damage": 13361
+        }
+      },
+      {
+        "playerId": 92838,
+        "champion": "Pantheon",
+        "role": "jungle",
+        "eloChange": -5,
+        "rankPointChange": -5,
+        "stats": {
+          "kills": 3,
+          "deaths": 3,
+          "assists": 7,
+          "damage": 1856
+        }
+      },
+      {
+        "playerId": 64689,
+        "champion": "Brand",
+        "role": "top",
+        "eloChange": -9,
+        "rankPointChange": -9,
+        "stats": {
+          "kills": 1,
+          "deaths": 2,
+          "assists": 4,
+          "damage": 5875
+        }
+      },
+      {
+        "playerId": 29478,
+        "champion": "Kha'Zix",
+        "role": "ad carry",
+        "eloChange": -7,
+        "rankPointChange": -7,
+        "stats": {
+          "kills": 8,
+          "deaths": 6,
+          "assists": 13,
+          "damage": 2384
+        }
+      }
+    ]
+  },
+  {
+    "matchId": "match_1746980703264_955",
+    "changes": [
+      {
+        "playerId": 13886,
+        "champion": "Zac",
+        "role": "jungle",
+        "eloChange": 20,
+        "rankPointChange": 20,
+        "stats": {
+          "kills": 1,
+          "deaths": 1,
+          "assists": 4,
+          "damage": 14364
+        }
+      },
+      {
+        "playerId": 52144,
+        "champion": "Talon",
+        "role": "top",
+        "eloChange": 8,
+        "rankPointChange": 8,
+        "stats": {
+          "kills": 0,
+          "deaths": 3,
+          "assists": 0,
+          "damage": 8400
+        }
+      },
+      {
+        "playerId": 17758,
+        "champion": "Ziggs",
+        "role": "support",
+        "eloChange": 15,
+        "rankPointChange": 15,
+        "stats": {
+          "kills": 3,
+          "deaths": 2,
+          "assists": 10,
+          "damage": 8368
+        }
+      },
+      {
+        "playerId": 41241,
+        "champion": "Bard",
+        "role": "mid",
+        "eloChange": 16,
+        "rankPointChange": 16,
+        "stats": {
+          "kills": 5,
+          "deaths": 4,
+          "assists": 7,
+          "damage": 13061
+        }
+      },
+      {
+        "playerId": 51590,
+        "champion": "Tristana",
+        "role": "ad carry",
+        "eloChange": 13,
+        "rankPointChange": 13,
+        "stats": {
+          "kills": 6,
+          "deaths": 13,
+          "assists": 15,
+          "damage": 11006
+        }
+      },
+      {
+        "playerId": 47359,
+        "champion": "Sona",
+        "role": "ad carry",
+        "eloChange": -11,
+        "rankPointChange": -11,
+        "stats": {
+          "kills": 0,
+          "deaths": 2,
+          "assists": 0,
+          "damage": 11909
+        }
+      },
+      {
+        "playerId": 11807,
+        "champion": "Tahm Kench",
+        "role": "jungle",
+        "eloChange": -4,
+        "rankPointChange": -4,
+        "stats": {
+          "kills": 0,
+          "deaths": 2,
+          "assists": 0,
+          "damage": 3521
+        }
+      },
+      {
+        "playerId": 45499,
+        "champion": "Azir",
+        "role": "top",
+        "eloChange": -5,
+        "rankPointChange": -5,
+        "stats": {
+          "kills": 0,
+          "deaths": 2,
+          "assists": 0,
+          "damage": 5393
+        }
+      },
+      {
+        "playerId": 18514,
+        "champion": "Azir",
+        "role": "mid",
+        "eloChange": -28,
+        "rankPointChange": -28,
+        "stats": {
+          "kills": 8,
+          "deaths": 2,
+          "assists": 23,
+          "damage": 12777
+        }
+      },
+      {
+        "playerId": 17144,
+        "champion": "Graves",
+        "role": "support",
+        "eloChange": -11,
+        "rankPointChange": -11,
+        "stats": {
+          "kills": 15,
+          "deaths": 7,
+          "assists": 23,
+          "damage": 6806
+        }
+      }
+    ]
+  }
+]
